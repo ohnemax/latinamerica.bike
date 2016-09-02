@@ -1,0 +1,20 @@
+{% assign author = site.authors[page.author] %}
+<div class="notepad-author-info">
+                <div class="row">
+                    <section class="notepad-post-author small-12 columns">
+                        
+                            <img src="{{site.baseurl}}/images/{{ author.avatar }}" class="notepad-post-author-avatar" alt="{{ author.display_name }}'s photo">
+                        
+                        
+                            <span class="author-label">Author</span>
+                            <h1>{{ author.display_name }}</h1>
+                        
+                        
+                            <p><a href="mailto:{{ author.email }}" class="author-website">{{ author.email }}</a></p>
+                        
+                        
+                            <p>{{ author.description }}</p>
+                        
+                    </section>
+                </div>
+            </div>
