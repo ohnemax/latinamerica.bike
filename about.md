@@ -7,21 +7,6 @@ imagefeature: fourseasons.jpg
 chart: true
 ---
 
-{% assign total_words = 0 %}
-{% assign total_readtime = 0 %}
-{% assign featuredcount = 0 %}
-{% assign statuscount = 0 %}
-
-{% for post in site.posts %}
-    {% assign post_words = post.content | strip_html | number_of_words %}
-    {% assign readtime = post_words | append: '.0' | divided_by:200 %}
-    {% assign total_words = total_words | plus: post_words %}
-    {% assign total_readtime = total_readtime | plus: readtime %}
-    {% if post.featured %}
-    {% assign featuredcount = featuredcount | plus: 1 %}
-    {% endif %}
-{% endfor %}
-
 Hallo, wir sind **Moritz** und **Martha** und dies ist unser Blog über unseren **Elektrotransporter** und seine Idee dahinter.  
 
 Momentan besteht er aus {{ total_words }} Wörtern und {{ site.posts | size }} Posts in {{ site.categories | size }} Kategorien. Es wird behauptet der Durchschnittsmensch könnte dies in ungefähr <span class="time">{{ total_readtime }}</span> Minuten lesen. {% if featuredcount != 0 %} Wir haben <a href="{{ site.url }}/featured">{{ featuredcount }} ausgewählte Artikel</a>, die auf jedenfall lesenwert sind.{% endif %} 
