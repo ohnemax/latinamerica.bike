@@ -29,14 +29,11 @@
         <li class="notepad-mobile-close-btn show-for-small text-right">
             <a href="#"><i class="fa fa-times"></i></a>
         </li>
-{% for link in site.links %}
-            <li>{% if link.external %}
-                    <a href="{{ link.url }}">{{ link.title }}</a>
-                {% else %}
-                    <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
-                {% endif %} </li>
+{% for link in site.links[page.lang] %}
+            <li>
+                    <a href="{{ site.baseurl }}{{ link[1].url }}">{{ link[1].title }}</a>
+            </li>
 {% endfor %}            
-           <li><a href="{{ site.baseurl }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
     </ul>
 
 </div>

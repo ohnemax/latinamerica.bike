@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "Testpost"
-author: moritz
+title: "Testpost (eng)"
+author: ohnemax
+lang: en
+ref: p1
 description: 
 headline: 
 modified: 2015-20-09
 category: test
 tags: [Autos]
 imagefeature: 
-mathjax: 
-chart: 
 comments: true
 featured: true
 ---
 
 
-Vielleicht geht es los
+Probably starting...
