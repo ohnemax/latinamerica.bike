@@ -41,17 +41,27 @@ authors:
 # Links to include in footer navigation
 # For external links add external: true
 links:
-  - title: Home
-    url: /
-    external: false
-    icon:  home
-  - title: Featured Posts
-    url: /featured
-  - title: Categories
-    url: /categories
-  - title: About
-    url: /about
-
+  en:
+    home:
+      title: Home
+      url: /
+    categories:
+      title: Categories
+      url: /categories
+    about:
+      title: About
+      url: /about
+  de:
+    home:
+      title: Home
+      url: /
+    categories:
+      title: Kategorien
+      url: /kategorien
+    about:
+      title: Über
+      url: /ueber
+      
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Berlin
 future:      true
