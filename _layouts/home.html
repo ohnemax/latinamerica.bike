@@ -18,7 +18,7 @@
         </li>
 {% for link in site.links[page.lang] %}
             <li>
-            <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+            <a href="{{ site.baseurl }}{{ link[1].url }}">{{ link[1].title }}</a>
             </li>
 	    {% endfor %}
   {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
