@@ -7,15 +7,15 @@ dropcap:			true
 # or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
 url:        	  /Notepad
-baseurl:          /abc
+baseurl:          /
 
 # Owner/author information
 owner:
-  name:           Ducato Elettra
+  name:           OWNER NAME
   avatar:         bus.jpg
   email:          bus@wetravel.solar
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Great Car
+  description:    Blog Description
   # Social networking links used in footer. Update and remove as you like.
   twitter:        wetravelsolar
   github:         ohnemax      
@@ -38,8 +38,6 @@ links:
     url: /
     external: false
     icon:  home
-  - title: Idea
-    url: /idea
   - title: Featured Posts
     url: /featured
   - title: Categories
