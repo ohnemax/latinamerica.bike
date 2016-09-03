@@ -6,15 +6,15 @@ description:
   en: Manual speed
   de: deutsche beschreibung
 index:
-  en:
+  en: index.html
   de: start.html
 logo:             templogo.png
 share:            true
 dropcap:			true
-# Change url to your domain. Leave localhost server or blank when working locally.
-# or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
-# whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
+
+# url
 #url:        	  /latinamerica.bike/
+# baseurl -> subfolder
 baseurl:	  /latinamerica.bike/
 
 # Owner/author information
@@ -22,7 +22,6 @@ owner:
   name:           OWNER NAME
   avatar:         bus.jpg
   email:          bus@wetravel.solar
-  # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:    Blog Description
   # Social networking links used in footer. Update and remove as you like.
   twitter:        wetravelsolar
