@@ -18,9 +18,9 @@
         </li>
 {% for link in site.links %}
             <li>{% if link.external %}
-            <a href="{{ link.url }}">{{ link.title }}</a>
+            <a href="{{ link.url }}">{{ link.title[page.lang] }}</a>
             {% else %}
-            <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+            <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title[page.lang] }}</a>
             {% endif %} </li>
 {% endfor %}            
            <li><a href="{{ site.baseurl }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
@@ -32,12 +32,12 @@
         <div class="notepad-site-head-bg"></div>
         <h1 class="notepad-blog-title">
             <span class="notepad-site-head-title-bg">
-                {{ site.title }}
+                {{ site.title[page.lang] }}
             </span>
         </h1>
 	<a class="notepad-blog-logo" href="{{ site.baseurl }}"><img src="{{ site.baseurl }}/images/{{ site.logo }}" alt="Blog Logo" /></a>
 
-        <h2 class="notepad-blog-description">{{ site.description }}</h2>
+        <h2 class="notepad-blog-description">{{ site.description[page.lang] }}</h2>
     </div>
 </header>
 
