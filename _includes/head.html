@@ -2,7 +2,7 @@
 <title>site.title[page.lang]</title>
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description[page.lang] }}{% endif %}">
 
-<link href="{{ site.baseurl }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+<link href="{{ site.baseurl }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title[page.lang] }} Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
