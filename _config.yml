@@ -1,5 +1,13 @@
-title:            Latinamerica by Bike
-description:      "Manual speed"
+# Site Settings
+title:
+  en: Latinamerica by Bike
+  de: Suedamerika per Rad
+description:
+  en: Manual speed
+  de: deutsche beschreibung
+index:
+  en:
+  de: start.html
 logo:             templogo.png
 share:            true
 dropcap:			true
@@ -25,11 +33,11 @@ authors:
   mardy:
     name: Martha
     display_name: Martha
-    email: martha@wetravel.solar
+    email: martha@latinamerica.bike
   ohnemax:
     name: Moritz Kütt
     display_name: Moritz
-    email: moritz@wetravel.solar
+    email: moritz@latinamerica.bike
     
 # Links to include in footer navigation
 # For external links add external: true
