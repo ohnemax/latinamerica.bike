@@ -5,7 +5,7 @@ ref: index
 tags: [cycling, camping, blog]
 ---
 
-    {% assign postsposts=site.posts | where:"lang", page.lang %}
+    {% assign langposts=site.posts | where:"lang", page.lang %}
     {% assign posts=langposts | where:"archive", "false" %}
     {% for post in posts %}
     <article class="notepad-index-post post row">
