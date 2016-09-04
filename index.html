@@ -6,7 +6,7 @@ tags: [cycling, camping, blog]
 ---
 
     {% assign langposts=site.posts | where:"lang", page.lang %}
-    {% assign posts=langposts | where:"archive", "false" %}
+    {% assign posts=langposts | where:"archive", false %}
     {% for post in posts %}
     <article class="notepad-index-post post row">
         <div class="small-12 medium-3 large-2 columns datetime">
