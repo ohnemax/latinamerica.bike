@@ -4,7 +4,8 @@ lang: de
 ref: index
 tags: [cycling, camping, blog]
 ---
-    {% assign posts=site.posts | where:"lang", page.lang %}
+    {% assign postsposts=site.posts | where:"lang", page.lang %}
+    {% assign posts=langposts | where:"archive", false %}
     {% for post in posts %}
     <article class="notepad-index-post post row">
         <div class="small-12 medium-3 large-2 columns datetime">

@@ -3,6 +3,7 @@ layout: post
 title: "Testpost"
 author: ohnemax
 lang: de
+archive: false
 ref: p1
 description: 
 headline: 
