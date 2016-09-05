@@ -1,0 +1,17 @@
+---
+layout: home
+lang: en
+ref: archive
+---
+    {% assign langposts=site.posts | where:"lang", page.lang %}
+    {% assign posts=langposts | where:"archive", false %}
+    {% for post in posts %}
+    <article class="notepad-index-post post row">
+        <div class="small-12 medium-3 large-2 columns datetime">
+              {{ post.date | date: "%Y/%m/%d" }}
+        </div>
+        <div class="small-12 medium-9 large-10 columns">
+                    <a href="{{ site.baseurl }}{{ post.url }}">
+        </div>
+    </article>
+    {% endfor %}
