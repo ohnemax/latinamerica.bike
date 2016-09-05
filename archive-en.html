@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 lang: en
 ref: archive
 ---
@@ -11,7 +11,9 @@ ref: archive
               {{ post.date | date: "%Y/%m/%d" }}
         </div>
         <div class="small-12 medium-9 large-10 columns">
-                    <a href="{{ site.baseurl }}{{ post.url }}">
+          <a href="{{ site.baseurl }}{{ post.url }}">
+	    {{ post.title }}
+          </a>
         </div>
     </article>
     {% endfor %}

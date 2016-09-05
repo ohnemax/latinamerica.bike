@@ -45,30 +45,35 @@ links:
     home:
       title: Home
       url: /
-    categories:
-      title: Categories
-      url: /categories
     about:
       title: About
       url: /about
+    categories:
+      title: Categories
+      url: /categories
+    archive:
+      title: Archive
+      url: /archive-en
   de:
     home:
       title: Home
       url: /
-    categories:
-      title: Kategorien
-      url: /kategorien
     about:
       title: Über
       url: /ueber
-      
+    categories:
+      title: Kategorien
+      url: /kategorien
+    archive:
+      title: Archiv
+      url: /archive-de
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Berlin
 future:      true
 highlighter: rouge
 markdown:    kramdown
 paginate:    5
-paginate_path: "page:num"
+paginate_path: "/paginate/page:num"
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title
