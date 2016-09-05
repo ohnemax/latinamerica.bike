@@ -10,7 +10,7 @@ index:
   de: start.html
 logo:             templogo.png
 share:            true
-dropcap:			true
+dropcap:          true
 
 # url
 #url:        	  /latinamerica.bike/
@@ -45,6 +45,7 @@ links:
     home:
       title: Home
       url: /
+      icon: home
     about:
       title: About
       url: /about
@@ -58,6 +59,7 @@ links:
     home:
       title: Home
       url: /
+      icon: home
     about:
       title: Über
       url: /ueber
@@ -70,7 +72,7 @@ links:
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Berlin
 future:      true
-highlighter: rouge
+highlighter: pygments
 markdown:    kramdown
 paginate:    5
 paginate_path: "/paginate/page:num"
