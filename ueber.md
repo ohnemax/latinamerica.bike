@@ -2,7 +2,7 @@
 layout: page
 ref: about
 lang: de
-permalink: /about/index.html
+permalink: /ueber/index.html
 title: About us & the trip
 tags: [About]
 ---
