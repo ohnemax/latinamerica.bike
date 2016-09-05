@@ -1,10 +1,10 @@
 # Site Settings
 title:
   en: Latinamerica by Bike
-  de: Suedamerika per Rad
+  de: Südamerika per Rad
 description:
-  en: Manual speed
-  de: deutsche beschreibung
+  en: Travel slowly
+  de: Langsam reisen
 index:
   en: index.html
   de: start.html
@@ -19,10 +19,9 @@ baseurl:	  /latinamerica.bike/
 
 # Owner/author information
 owner:
-  name:           OWNER NAME
-  avatar:         bus.jpg
-  email:          bus@wetravel.solar
-  description:    Blog Description
+  name:           Moritz
+  avatar:         moritz.jpg
+  email:          moritz@latin...a.bike
   # Social networking links used in footer. Update and remove as you like.
   # twitter:        wetravelsolar
   # github:         ohnemax      
@@ -35,7 +34,7 @@ authors:
     email: martha@latin...a.bike
     avatar: martha.jpg
   ohnemax:
-    name: Moritz Kütt
+    name: Moritz
     display_name: Moritz
     email: moritz@latin...a.bike
     avatar: moritz.jpg
