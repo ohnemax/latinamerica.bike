@@ -34,7 +34,7 @@
             <a href="{{ site.baseurl }}{{ link[1].url }}">{{ link[1].title }}</a>
             </li>
 	    {% endfor %}
-  {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+lang  {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
   {% for post in posts %} <li><i><a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}">{{ post.lang }}</a></i></li> {% endfor %}
 
   {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
