@@ -6,8 +6,8 @@ description:
   en: Travel slowly
   de: Langsam reisen
 index:
-  en: index.html
-  de: start.html
+  en: index-en.html
+  de: index.html
 #logo:             templogo.png
 share:            true
 dropcap:          true
@@ -45,7 +45,7 @@ links:
   en:
     home:
       title: Home
-      url: /
+      url: /index-en
       icon: home
     about:
       title: About
