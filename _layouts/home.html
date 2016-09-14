@@ -18,11 +18,11 @@
         </li>
 {% for link in site.links[page.lang] %}
             <li>
-            <a href="{{ site.baseurl }}{{ link[1].url }}">{{ link[1].title }}</a>
+            <a href="{{ site.url }}/{{ link[1].url }}">{{ link[1].title }}</a>
             </li>
 	    {% endfor %}
-	<li><i><a href="{{ site.baseurl }}start.html">de</a></i></li>
-	<li><i><a href="{{ site.baseurl }}">en</a></i></li>
+	<li><i><a href="{{ site.url }}/index.html">de</a></i></li>
+	<li><i><a href="{{ site.url }}/index-en.htmlo">en</a></i></li>
     </ul>
 </div>
         <div class="clearfix"></div>

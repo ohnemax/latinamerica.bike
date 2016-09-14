@@ -17,8 +17,8 @@
             <header class="notepad-post-header-simple">
                 <div class="notepad-post-menu-header-simple">
 {% endif %}
-<!--                    <a class="notepad-blog-logo" href="{{ site.baseurl }}">
-                        <img src="{{ site.baseurl }}/images/{{ site.logo }}" alt="Blog Logo" />
+<!--                    <a class="notepad-blog-logo" href="{{ site.url }}">
+                        <img src="{{ site.url }}/images/{{ site.logo }}" alt="Blog Logo" />
                     </a>-->
 
                 <div class="notepad-blog-menu">      
@@ -31,14 +31,14 @@
         </li>
 {% for link in site.links[page.lang] %}
             <li>
-            <a href="{{ site.baseurl }}{{ link[1].url }}">{{ link[1].title }}</a>
+            <a href="{{ site.url }}/{{ link[1].url }}">{{ link[1].title }}</a>
             </li>
 	    {% endfor %}
   {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
-  {% for post in posts %} <li><i><a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}">{{ post.lang }}</a></i></li> {% endfor %}
+  {% for post in posts %} <li><i><a href="{{ site.url }}/{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a></i></li> {% endfor %}
 
   {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-  {% for page in pages %} <li><i><a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{{ page.lang }}</a></i></li> {% endfor %}
+  {% for page in pages %} <li><i><a href="{{ site.url }}/{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a></i></li> {% endfor %}
 
     </ul>
 
@@ -47,18 +47,18 @@
 {% if page.imagefeature %}
             <div class="notepad-post-title bg-check">
                 <h1>{{ page.title }}</h1>
-                <p>by <strong>{{ author.display_name }}</strong> &#8212; {% assign tagsize = page.tags.size %}{% if tagsize != 0 %}on {% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}&nbsp;&comma;&nbsp;{% endunless %}{% endfor %}{% endif %} <strong><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b %Y" }}</time></strong></p>
+                <p>by <strong>{{ author.display_name }}</strong> &#8212; {% assign tagsize = page.tags.size %}{% if tagsize != 0 %}on {% for tag in page.tags %}<a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}&nbsp;&comma;&nbsp;{% endunless %}{% endfor %}{% endif %} <strong><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b %Y" }}</time></strong></p>
             </div>
             <div class="bg-img"></div>
         </header>
         <button class="trigger bg-check" data-info="Read more"><span>Trigger</span></button>
-        <img src="{{ site.baseurl }}/images/{{ page.imagefeature }}" alt="cover-image" />
+        <img src="{{ site.url }}/images/{{ page.imagefeature }}" alt="cover-image" />
 {% else %}
                 <div class="notepad-post-title-simple row">
                     <div class="small-12 columns">
                         <div class="notepad-post-meta-simple">
                             <h1>{{ page.title }}</h1>
-                            <p>by <strong>{{ author.display_name }}</strong> &#8212; {% assign tagsize = page.tags.size %}{% if tagsize != 0 %}on {% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}&nbsp;&comma;&nbsp;{% endunless %}{% endfor %}{% endif %} <strong><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b %Y" }}</time></strong></p>
+                            <p>by <strong>{{ author.display_name }}</strong> &#8212; {% assign tagsize = page.tags.size %}{% if tagsize != 0 %}on {% for tag in page.tags %}<a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}&nbsp;&comma;&nbsp;{% endunless %}{% endfor %}{% endif %} <strong><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b %Y" }}</time></strong></p>
                         </div>
                     </div>
                 </div>
