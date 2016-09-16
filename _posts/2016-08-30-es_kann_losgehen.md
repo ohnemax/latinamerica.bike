@@ -18,7 +18,7 @@ Naja, jetzt ist alles gemacht: Zimmer geräumt, vergessen das Essen aus dem Küh
 
 Aber wie man in Paris erkennen kann:
 
-![Sieht es doch ganz gut aus]({{ site.baseurl}} /images/September/DSCF2132_small.JPG)
-![Zwei große Fahrradkisten sind erkennbar]({{ site.baseurl}} /images/September/out1.JPG)
+![Sieht es doch ganz gut aus]({{ site.url}} /images/September/DSCF2132_small.JPG)
+![Zwei große Fahrradkisten sind erkennbar]({{ site.url}} /images/September/out1.JPG)
 
 Das sind wohl unsere Räder auf dem Gepäckfahrzeug. 
