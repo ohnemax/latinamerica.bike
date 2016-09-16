@@ -31,5 +31,19 @@ We are both in our thirties and still dream to make the world a better place. Th
 Before we started we both finished our doctoral degrees (Martha says Moritz was rather slow). No we want to clear our heads and took a year off. Martha worked as a biologist on the Evolution of Plants, Moritz as physicist doing scientific peace research.
 
 Currently, the Blog contains {{ total_words }} words and {{ site.posts | size }} Posts in {{ site.categories | size }} categories. It has been said that an average human could read this in approximately <span class="time">{{ total_readtime }}</span> minutes.
-The newest entry is {% for post in site.posts limit:1 %}{% if post.description %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}">"{{ post.title }}"</a>{% else %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}" title="Read more about {{ post.title }}">"{{ post.title }}"</a>{% endif %}{% endfor %}, written on {% for post in site.posts limit:1 %}{% assign modifiedtime = post.modified | date: "%Y%m%d" %}{% assign posttime = post.date | date: "%Y%m%d" %}<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>{% if post.modified %}{% if modifiedtime != posttime %}.
+The newest entry is
+{% for post in site.posts limit:1 %}
+  {% if post.description %}
+    <a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}">"{{ post.title }}"</a>
+  {% else %}
+    <a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}" title="Read more about {{ post.title }}">"{{ post.title }}"</a>
+  {% endif %}
+{% endfor %}
+, written on 
+{% for post in site.posts limit:1 %}
+  {% assign modifiedtime = post.modified | date: "%Y%m%d" %}
+  {% assign posttime = post.date | date: "%Y%m%d" %}
+  <time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>
+{% endfor %}
+
 

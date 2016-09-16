@@ -30,6 +30,19 @@ An sich wollen wir der Welt zeigen, dass Fortbewegungsmittel auf fossilen Brenns
 Wir sind beide um die dreißig und träumen immer noch davon die Welt zu verbessern. Deswegen auch die Idee mit dem Elektroauto und jetzt diese Reise. Bevor wir los sind haben wir, mehr oder minder flott, unseren Doktortitel gemacht und wollen jetzt erst mal den Kopf frei bekommen. Moritz hat als Physiker in der naturwissenschaftlichen Friedensforschug promoviert und Martha hat sich als Biologin mit der Evolution von Pflanzen beschäftigt.
 
 Momentan besteht der Blog aus {{ total_words }} Wörtern und {{ site.posts | size }} Posts in {{ site.categories | size }} Kategorien. Es wird behauptet der Durchschnittsmensch könnte dies in ungefähr <span class="time">{{ total_readtime }}</span> Minuten lesen. 
-Der neuste Post ist {% for post in site.posts limit:1 %}{% if post.description %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}">"{{ post.title }}"</a>{% else %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}" title="Read more about {{ post.title }}">"{{ post.title }}"</a>{% endif %}{% endfor %} vom {% for post in site.posts limit:1 %}{% assign modifiedtime = post.modified | date: "%Y%m%d" %}{% assign posttime = post.date | date: "%Y%m%d" %}<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>{% if post.modified %}{% if modifiedtime != posttime %}.
+Der neuste Post ist
+{% for post in site.posts limit:1 %}
+  {% if post.description %}
+    <a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}">"{{ post.title }}"</a>
+  {% else %}
+    <a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}" title="Read more about {{ post.title }}">"{{ post.title }}"</a>
+  {% endif %}
+{% endfor %}
+vom
+{% for post in site.posts limit:1 %}
+  {% assign modifiedtime = post.modified | date: "%Y%m%d" %}
+  {% assign posttime = post.date | date: "%Y%m%d" %}
+  <time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>
+{% endfor %}
 
 
