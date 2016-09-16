@@ -5,7 +5,7 @@ author: mardy
 modified: 2016-08-30
 category: Radgeschichten
 tags: [Rad]
-lang:de
+lang: de
 ref: losgehts
 archive: false
 comments: true
