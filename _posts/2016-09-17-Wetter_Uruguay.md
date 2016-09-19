@@ -7,12 +7,9 @@ headline:
 modified: 2016-09-17
 category: Radgeschichten
 tags: [Blitz, Tornado, Uruguay]
-lang:de
+lang: de
 ref: Blitz
 archive: false
-imagefeature: 
-mathjax: 
-chart: 
 comments: true
 featured: false
 ---
