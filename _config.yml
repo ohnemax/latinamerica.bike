@@ -38,6 +38,11 @@ authors:
     display_name: Moritz
     email: moritz@latin...a.bike
     avatar: moritz.jpg
+  team:
+    name: Martha and Moritz
+    display_name: MaMo
+    email: martha@latin...a.bike
+    avatar: team.jpg
     
 # Links to include in footer navigation
 # For external links add external: true
@@ -73,7 +78,7 @@ links:
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Berlin
 future:      true
-highlighter: pygments
+highlighter: rouge
 markdown:    kramdown
 paginate:    5
 paginate_path: "/paginate/page:num"
