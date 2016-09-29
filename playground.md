@@ -15,7 +15,7 @@ trackkit
 <iframe width="480" height="360" src="http://track-kit.net/maps_s3/?v=embed&track=229801.gpx" frameborder="0" allowfullscreen></iframe>
 
 gpsies
-<iframe width="480" height="360" src="http://track-kit.net/maps_s3/?v=embed&track=229801.gpx" frameborder="0" allowfullscreen></iframe>
+<iframe src="http://www.gpsies.com/mapOnly.do?fileId=vcbuzztncnlevljq&authkey=1A21293AC24205B93A27F78A16106B2952B01CB73147441D" width="600" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 
 <iframe src='	http://share.mapbbcode.org/muynz' width='400' height='550' scrolling='no' frameborder='0' style='border: 1px solid #ebeded;'></iframe>
 
