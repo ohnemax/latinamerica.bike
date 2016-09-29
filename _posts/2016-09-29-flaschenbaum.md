@@ -9,11 +9,7 @@ category: Pflanze des Tages
 tags: [green]
 lang: de
 ref: BAOBAB
-archive: 
-false
-imagefeature: 
-mathjax: 
-chart: 
+archive: false
 comments: true
 featured: false
 ---
