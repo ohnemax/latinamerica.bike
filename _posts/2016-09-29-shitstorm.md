@@ -12,9 +12,10 @@ ref: vogel
 archive: false
 comments: true
 featured: false
+imagefeature: September/DSCF2226_small.JPG
 ---
 Diese 2 haben lauthals auf sich aufmerksam gemacht, als ich unter ihrem "Grundstück" pinkeln gehen wollte. Da ich einen "Shitstorm" vermeiden wollte, hab ich mir lieber ne andere Ecke gesucht....
 
-![Schreihälse]({{ site.baseurl}}/images/September/DSCF2226_small.JPG)
+![Schreihälse]({{ site.url}}/images/September/DSCF2226_small.JPG)
 
 
