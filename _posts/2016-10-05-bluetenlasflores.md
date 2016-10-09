@@ -18,9 +18,11 @@ imagefeature: october/P1020505_small.JPG
 Heute gab es mal wieder neues blühendes Grünzeug...
 
 Zum einen diese Schönheit ...
-![Habitus]({{ site.baseurl}}/images/october/P1020507_small.jpg)
-![Blüte]({{ site.baseurl}}/images/october/P1020509_small.jpg)
+![Habitus]({{ site.baseurl}}/images/october/P1020507_small.JPG)
+![Blüte]({{ site.baseurl}}/images/october/P1020509_small.JPG)
 
 und direkt daneben dieses kleine Wesen mit 5-zähliger Blüte, verwachsenen Kronblättern und lanzettlichen Blättern aus einer Rosette:
 
-![Habitus]({{ site.baseurl}}/images/october/P1020511_small.jpg)
+![Habitus]({{ site.baseurl}}/images/october/P1020511_small.JPG)
+
+
