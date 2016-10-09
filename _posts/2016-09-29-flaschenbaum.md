@@ -17,7 +17,7 @@ featured: false
 Hier hätten wir Straßenbegrünung in Buenos Aires:
 Sieht aus wie aus wie ein Baobab mit Dornen.
 
-![Eine Art Baobab]({{site.baseurl}}/images/September/DSCF2158_small.JPG)
+![Eine Art Baobab]({{site.url}}/images/September/DSCF2158_small.JPG)
 
-![mit Stacheln.]({{site.baseurl}}/images/September/DSCF2159_small.JPG)
+![mit Stacheln.]({{site.url}}/images/September/DSCF2159_small.JPG)
 

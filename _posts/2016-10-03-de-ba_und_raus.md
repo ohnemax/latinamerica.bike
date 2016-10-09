@@ -34,8 +34,11 @@ Auch etwas länger gedauert hat die Planung der Stadtausfahrt. Wir wollten ein S
 
 Im Ende sind wir nur ein kleines Stück rausgefahren nach Alejandro Korn, mit einem nagelneuen Zug inklusive Fahrradabteil. Von dort ging es dann los Richtung Cañuelas. Eigentlich wollten wir wo anders hin, aber die Ruta Provincial war eine Schotterstraße und es regnete mal wieder.
 
-In Cañuekas angekommen werden wir groß winkend von Leuten anhehalten: "Una pregunta, una pregunta!" Das waren zwei Tramper inklusive ihrer Fahrer, die genauso wie wir eine Unterkunft suchten. Da wir keine bessere wußten, riefen sie Freunde an und wir alle landeten bei den "5 hermanos".
+In Cañuelas angekommen werden wir groß winkend von Leuten angehalten: "Una pregunta, una pregunta!" Das waren zwei Tramper inklusive ihrer Fahrer, die genauso wie wir eine Unterkunft suchten. Da wir keine bessere wußten, riefen sie Freunde an und wir alle landeten bei den "5 hermanos".
 
-Problem bei der Übernachtung im Zimmer, man bekommt einen Schlüssel. Diesen verlegten wir ziemlich flott. Man muss allerdings dazu sagen, dass das beu 2 Leute, 10 Taschen und 8qm sehr leicht möglich ist. So begann unsere Suche: erst die Betten leer räumen, dann wieder alles aufs Bett und die Betten verrücken. Kein Schlüssel, dann das ganze nochmal von vorn. Nix. Einzige Möglichkeit, der Schlüssel ist in eine der Taschen gefallen. Also, müssen die alle ausgeräumt werden. 2,5h später immer noch kein Schlüssel und die Stimmung ist im Keller.
+Problem bei der Übernachtung im Zimmer, man bekommt einen Schlüssel. Diesen verlegten wir ziemlich flott. Man muss allerdings dazu sagen, dass das bei 2 Leute, 10 Taschen und 8qm sehr leicht möglich ist. So begann unsere Suche: erst die Betten leer räumen, dann wieder alles aufs Bett und die Betten verrücken. Kein Schlüssel, dann das ganze nochmal von vorn. Nix. Einzige Möglichkeit, der Schlüssel ist in eine der Taschen gefallen. Also, müssen die alle ausgeräumt werden. 2,5h später immer noch kein Schlüssel und die Stimmung ist im Keller.
 
-Nach einer erholsamen Nacht, fällt der Schlüssel einfach aus einem Ärmel unserer Regenjacken. Wenigstens was, weiter geht's nach San Miguel der Monte. Statt den kürzesten Weg zu nehmen, haben wir den schöneren genommen über Lobos. Angekommen in San Miguel haben wir entschieden einen Tag Pause zumachen, schließlich hatten wir unsere eesten 1000km hinter ums.
+Nach einer erholsamen Nacht, fällt der Schlüssel einfach aus einem Ärmel unserer Regenjacken. Wenigstens was, weiter geht's nach San Miguel del Monte. Statt den kürzesten Weg zu nehmen, haben wir den schöneren genommen über Lobos. Angekommen in San Miguel haben wir entschieden einen Tag Pause zumachen, schließlich hatten wir unsere ersten 1000km hinter uns.
+
+![Kuchen für die ersten 1000km]({{ site.url}}/images/october/DSCF2253_small.JPG)
+*Kuchen für die ersten 1000km*
