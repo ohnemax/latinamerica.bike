@@ -21,7 +21,7 @@ Dazu trifft man regelmäßig auf diverse Formen von Roadkill und ab und an Greif
 
 Das mit dem Roadkill ist ja so ne Sache, manchmal weiß man nicht ob es noch lebt, manchmal erkennt man nur am Gestank, dass es mal lebte. Aber es ermöglicht  einem auch Tiere zu sehen, die man sonst nie zu Gesicht bekommt...wie diese hier...
 
-![Echse]({{ site.baseurl}}/images/october/P1020533_small.JPG)
+![Echse]({{ site.baseurl}}/images/october/P1020553_small.JPG)
 
 oder diese. Upps, die hier lebt noch.
 
