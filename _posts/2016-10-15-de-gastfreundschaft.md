@@ -9,7 +9,6 @@ tags: [Rad, Unterkunft]
 lang: de
 ref: hospitality
 archive: false
-imagefeature: 
 comments: true
 featured: false
 ---
