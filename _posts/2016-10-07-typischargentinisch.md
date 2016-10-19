@@ -36,7 +36,7 @@ Lebend haben wir außerdem bisher diese eher seltenen Tiere (heutzutage selten) 
 
 und 
 
-![Störche in regelmäßigen Abständen]({{ site.baseurl}}/images/october/P1020509_small.JPG)
+![Störche in regelmäßigen Abständen]({{ site.baseurl}}/images/october/P1020493_small.JPG)
 *Störche in regelmäßigen Abständen*.
 
 Die Pflanzenwelt am Straßenrand hat sich teilweise verändert. Diese sieht man hier grad recht häufig...
