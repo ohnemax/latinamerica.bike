@@ -19,7 +19,7 @@ Der Alltag von uns ist wirklich langweilig, und trotzdem macht es Spass! Viel be
 
 Ein ganz normaler Rad-Tag sieht so aus: Wir stehen verdammt früh auf, so gegen 6.30h. Naja, da klingelt der Wecker, Moritz wird wach, macht irgendwas auf seinem Handy und ne halbe Stunde später fang ich an mich zu bewegen. 
 
-Es wird aufgestanden, Kaffe gekocht und  Frühstück vorbereitet. Meist von Moritz, während ich die Schlafuntensilien wieder zurück in ihre Verpackungen stopfe. 
+Es wird aufgestanden, Kaffee gekocht und  Frühstück vorbereitet. Meist von Moritz, während ich die Schlafuntensilien wieder zurück in ihre Verpackungen stopfe. 
 
 Dann wird gefrühstückt, der Rest eingepackt und das Rad beladen. Schwupps die Wupps, sind da 2h um oder auch mehr, wer weiß das schon. Dann geht es rauf aufs Rad und los mit dem Gestrampel. Das geht ein bis 2 Stunden gut, bis mein Magen laut nach mehr Essen schreit. Sehr seltsam übrigens, sonst war Moritz immer derjenige der sich ständig mit essen beachäftigen konnte, jetzt denk ich öfter drüber nach. 
 
@@ -29,8 +29,8 @@ Angekommen geht es darum mehr Essen zu finden, bzw frisches Gemüse was verkocht
 
 Beeindruckend wie oft man sich mit essen beschäftigen kann. Glücklicherweise gibt es überall Bäckereien, die neben Brot und Croissant auch leckere süße Teilchen, wie auch Quiche und Empanadas machen. Das erleichtert die ungemein große Essensaufnahme erheblich. Dazu gibt es viele Eier und reichlich Kohlenhydrate in Form von Reis und Nudeln. 
 
-![Croissants und Kaffee]({{ site.url}}/images/october/DSCF2288_small.JPG)
-*Croissants und Kaffee*
+![Croissants und Kaffee]({{ site.url}}/images/october/DSCF2288_small.JPG)  
+*Croissants, Kaffee und Wifi*  
 
 Auch wenn wir nicht am radeln sind, ist unser Tag von essen bestimmt. Nebenher waschen wir Wäsche, suchen Tauchsieder, sodass wir auch in Hotelzimmern warmes Essen machen können oder versuchen Heringe zukaufen, die wir wohl in Buenos Aires vergessen haben. Nur damit sie ein paar Tage später wieder ans Tageslicht kommen...
 
