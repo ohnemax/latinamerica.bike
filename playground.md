@@ -8,23 +8,19 @@ chart: true
 ---
 
 stats
-
-
-letztes Update: 14.10.2016
-
-##Gesamtstatistiken
+## Gesamtstatistiken
 
 Gesamt km (getrackt): 1457.07
 Gesamt Tage auf dem Rad: 20
 km ohne Platten: bisher alle!
 
 |  | Max | Tag | Min | Tag |
-| ------------- |:-------------:| :-----:| |:-------------:| :-----:|
+| --- |---:| :---:| |---:| :---:|
 | Distanz  | 108.86 | 19 | 41.3 | 7 |
 | durchschnittliche km/h (selbst gefahren) | 19.8 | 17 | 13.3 | 8 |
 | max km/h | 61.1 | 17 | 27.9 | 2 |
 
-##Etappenziele
+## Etappenziele
 
 1. Rundreise Uruguay:
 
@@ -32,8 +28,13 @@ km ohne Platten: bisher alle!
 2. Bahia Blanca:
   
   <iframe width="480" height="360" src="http://track-kit.net/maps_s3/?v=embed&track=230881.gpx" frameborder="0" allowfullscreen></iframe>
+3. Puerto Madryn:
+  Wir machen uns auf den Weg...
+  
+## Radlertageinfos
 
 | Tag | von | nach | Distanz | durchschnittliche km/h | max km/h | Höhenmeter hoch | Höhenmeter runter |
+| :---: | :---:| :---:| |---:| :---:|  :---:| :---:| :---:|
 | [1](http://www.latinamerica.bike/track/d16) | Buenos Aires | Tigre | ~40 | - | - | - | - |
 | [2]({ %post_url 2016-09-05-d2 %}) | Tigre | Los Cardales | 57.15 | 15.8 | 27.9 | 881 | 818 |
 | 3 | Los Cardales | Zarate | 53.36 | 13.5 | 41.7 | 1256 | 1248 |
@@ -56,7 +57,6 @@ km ohne Platten: bisher alle!
 | 19 | Tres Arroyos | Colonel Dorrego | 108.86 | 16.8 | 37.4 | 1393 | 1362 |
 | 20 | Colonel Dorrego | Bahia Blanca | 87.63★ | 16.3 | 29.0 | 1152 | 1236 |
 | 21 | Bahia Blanca |  |  |  |  |  |  |	
-
 tracktest
 
 <iframe src='http://www.trackprofiler.com/track:qvtyfy/embeded?width=400&map=1&title=0&graph=1&height=550' width='400' height='550' scrolling='no' frameborder='0' style='border: 1px solid #ebeded;'><a href='http://www.trackprofiler.com/track:qvtyfy'>test</a> on <a href='http://www.trackprofiler.com'>TrackProfiler</a></iframe>
