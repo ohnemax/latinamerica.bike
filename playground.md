@@ -35,9 +35,9 @@ km ohne Platten: bisher alle!
 
 | Tag | von | nach | Distanz | durchschnittliche km/h | max km/h | Höhenmeter hoch | Höhenmeter runter |
 | :---: | :---:| :---:| |---:| :---:|  :---:| :---:| :---:|
-| [1](http://www.latinamerica.bike/track/d16) | Buenos Aires | Tigre | ~40 | - | - | - | - |
+| [1](http://www.latinamerica.bike/track/d1) | Buenos Aires | Tigre | ~40 | - | - | - | - |
 | [2]({ %post_url 2016-09-05-d2 %}) | Tigre | Los Cardales | 57.15 | 15.8 | 27.9 | 881 | 818 |
-| 3 | Los Cardales | Zarate | 53.36 | 13.5 | 41.7 | 1256 | 1248 |
+| [3](2016-09-05-d2.md}| Los Cardales | Zarate | 53.36 | 13.5 | 41.7 | 1256 | 1248 |
 | 4 | Zarate | RN 14 Esso | 49.37 | 15.6 | 42.5 | 631 | 632 |
 | 5 | RN 14 Esso | Gualeguaychù | 100.53 | 16.0 | 30.9 | 1094 | 1220 |
 | 6* | Gualeguaychù | Fray Bentos | 53.63 | 22.5 | 98.0 | 868 | 850 |
