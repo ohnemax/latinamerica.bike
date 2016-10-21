@@ -40,7 +40,7 @@ km ohne Platten: bisher alle!
 | [3](http://www.latinamerica.bike/track/d3) | Los Cardales | Zarate | 53.36 | 13.5 | 41.7 | 1256 | 1248 |
 | [4](http://www.latinamerica.bike/track/d4) | Zarate | RN 14 Esso | 49.37 | 15.6 | 42.5 | 631 | 632 |
 | [5](http://www.latinamerica.bike/track/d5) | RN 14 Esso | Gualeguaychù | 100.53 | 16.0 | 30.9 | 1094 | 1220 |
-| [6/*](http://www.latinamerica.bike/track/d6) | Gualeguaychù | Fray Bentos | 53.63 | 22.5 | 98.0 | 868 | 850 |
+| [6+](http://www.latinamerica.bike/track/d6) | Gualeguaychù | Fray Bentos | 53.63 | 22.5 | 98.0 | 868 | 850 |
 | [7](http://www.latinamerica.bike/track/d7) | Fray Bentos | Mercedes | 41.73 | 16.8 | 40.8 | 634 | 603 |
 | [8](http://www.latinamerica.bike/track/d8) | Mercedes | Dolores | 57.00 | 13.3 | 48.6 | 1108 | 1102 |
 | [9](http://www.latinamerica.bike/track/d9) | Dolores | Carmelo | 82.98 | 17.1 | 46.1 | 1425 | 1421 |
