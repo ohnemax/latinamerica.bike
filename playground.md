@@ -25,27 +25,22 @@ km ohne Platten: bisher alle!
 ## Etappenziele
 
 1. Rundreise Uruguay: Tage 1-11
-
-  <iframe width="480" height="360" src="http://track-kit.net/maps_s3/?v=embed&track=230879.gpx" frameborder="0" allowfullscreen></iframe>
-  
-2. Bahia Blanca: Tage 12-20
-  
+  <iframe width="480" height="360" src="http://track-kit.net/maps_s3/?v=embed&track=230879.gpx" frameborder="0" allowfullscreen></iframe> 
+2. Bahia Blanca: Tage 12-20  
   <iframe width="480" height="360" src="http://track-kit.net/maps_s3/?v=embed&track=230881.gpx" frameborder="0" allowfullscreen></iframe>
-  
 3. Puerto Madryn:
-
   Wir machen uns auf den Weg...
   
 ## Radlertageinfos
 
 | Tag | von | nach | Distanz | durchschnittliche km/h | max km/h | Höhenmeter hoch | Höhenmeter runter |
-| :---: | :---:| :---:| ---:| :---:|  :---:| :---:| :---:|
+| :---: | :---:| :---:| ---:| :---:| :---:| :---:| :---:|
 | [1](http://www.latinamerica.bike/track/d1) | Buenos Aires | Tigre | ~40 | - | - | - | - |
 | [2](http://www.latinamerica.bike/track/d2) | Tigre | Los Cardales | 57.15 | 15.8 | 27.9 | 881 | 818 |
 | [3](http://www.latinamerica.bike/track/d3) | Los Cardales | Zarate | 53.36 | 13.5 | 41.7 | 1256 | 1248 |
 | [4](http://www.latinamerica.bike/track/d4) | Zarate | RN 14 Esso | 49.37 | 15.6 | 42.5 | 631 | 632 |
 | [5](http://www.latinamerica.bike/track/d5) | RN 14 Esso | Gualeguaychù | 100.53 | 16.0 | 30.9 | 1094 | 1220 |
-| [6*](http://www.latinamerica.bike/track/d6) | Gualeguaychù | Fray Bentos | 53.63 | 22.5 | 98.0 | 868 | 850 |
+| [6/*](http://www.latinamerica.bike/track/d6) | Gualeguaychù | Fray Bentos | 53.63 | 22.5 | 98.0 | 868 | 850 |
 | [7](http://www.latinamerica.bike/track/d7) | Fray Bentos | Mercedes | 41.73 | 16.8 | 40.8 | 634 | 603 |
 | [8](http://www.latinamerica.bike/track/d8) | Mercedes | Dolores | 57.00 | 13.3 | 48.6 | 1108 | 1102 |
 | [9](http://www.latinamerica.bike/track/d9) | Dolores | Carmelo | 82.98 | 17.1 | 46.1 | 1425 | 1421 |
