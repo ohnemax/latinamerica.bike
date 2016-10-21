@@ -24,14 +24,21 @@ km ohne Platten: bisher alle!
 
 ## Etappenziele
 
-1. Rundreise Uruguay: 
-  Tage 1-11
-  <iframe width="480" height="360" src="http://track-kit.net/maps_s3/?v=embed&track=230879.gpx" frameborder="0" allowfullscreen></iframe> 
+1. Rundreise Uruguay:  
+
+   Tage 1-11
+  
+   <iframe width="480" height="360" src="http://track-kit.net/maps_s3/?v=embed&track=230879.gpx" frameborder="0" allowfullscreen></iframe> 
+  
 2. Bahia Blanca: 
-  Tage 12-20  
-  <iframe width="480" height="360" src="http://track-kit.net/maps_s3/?v=embed&track=230881.gpx" frameborder="0" allowfullscreen></iframe>
-3. Puerto Madryn:
-  Wir machen uns auf den Weg...
+
+   Tage 12-20  
+  
+   <iframe width="480" height="360" src="http://track-kit.net/maps_s3/?v=embed&track=230881.gpx" frameborder="0" allowfullscreen></iframe>
+  
+3. Puerto Madryn:  
+
+   Wir machen uns auf den Weg...
   
 ## Radlertageinfos
 
@@ -52,13 +59,14 @@ km ohne Platten: bisher alle!
 | [12+](http://www.latinamerica.bike/track/d12) | Buenos Aires | Cañuelas | 94.02 | 23.7 | 146.6 | 1244 | 1043 |
 | [13](http://www.latinamerica.bike/track/d13) | Cañuelas | San Miguel del Monte | 84.50 | 18.0 | 60.5 | 1173 | 1285 |
 | [14](http://www.latinamerica.bike/track/d14) | San Miguel del Monte | Las Flores | 77.03 | 17.9 | 28.8 | 860 | 876 |
-| [15](http://www.latinamerica.bike/track/d15) | Las Flores | Rauch | 94.44 | 18.7 | 28.2 | 1078 | 1032 |  
+| [15](http://www.latinamerica.bike/track/d15) | Las Flores | Rauch | 94.44 | 18.7 | 28.2 | 1078 | 1032 | 
 | [16+](http://www.latinamerica.bike/track/d16) | Rauch | Tandil | 100.24 | 18.1 | 107.1 | 1463 | 1338 |
 | [17](http://www.latinamerica.bike/track/d17) | Tandil | Benito Juarez | 78.12 | 19.8 | 61.1 | 903 | 906 |
 | [18](http://www.latinamerica.bike/track/d18) | Benito Juarez | Tres Arroyos | 102.81 | 19.7 | 31.6 | 1165 | 1261 |
 | [19](http://www.latinamerica.bike/track/d19) | Tres Arroyos | Colonel Dorrego | 108.86 | 16.8 | 37.4 | 1393 | 1362 |
 | [20](http://www.latinamerica.bike/track/d20) | Colonel Dorrego | Bahia Blanca | 87.63 | 16.3 | 29.0 | 1152 | 1236 |
-| 21 | Bahia Blanca |  |  |  |  |  |  |	
+| 21 | Bahia Blanca |  |  |  |  |  |  |	  
+
 + beinhaltet nicht selbstgefahrene Kilometer
 
 
