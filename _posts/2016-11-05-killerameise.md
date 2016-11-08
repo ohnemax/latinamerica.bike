@@ -2,8 +2,6 @@
 layout: post
 title: "der Angriff der Killerameisen"
 author: mardy
-description: 
-headline: 
 modified: 2016-11-05
 category: Anekdote
 tags: [Ameisen, green]
@@ -12,7 +10,7 @@ ref: killerameise
 archive: false
 comments: true
 featured: false
-----
+---
 
 Nachdem wir gestern in Puerto Madryn angekommen sind und unser Zelt für die nächsten 2 Wochen stationären Aufenthalts eingerichtet haben, wurden wir Zeuge eines weiteren Naturschauspiels.
 
