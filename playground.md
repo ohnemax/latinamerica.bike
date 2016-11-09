@@ -6,15 +6,6 @@ permalink: /playground/index.html
 title: testing things
 chart: true
 ---
----
-layout: page
-ref: stats
-lang: de
-permalink: /stats_de/index.html
-title: Statistiken
-tags: [Zahlen]
-chart: true
----
 
 {% capture my-include %} {% include days.md%}{%endcapture%}
 {{my-include | markdownify}}
