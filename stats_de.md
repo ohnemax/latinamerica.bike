@@ -26,7 +26,9 @@ chart: true
 3. Puerto Madryn:  
    Tage 24-35
    
-4. Ushuaia:
+   <iframe width="480" height="360" src="http://track-kit.net/maps_s3/?v=embed&track=232100.gpx" frameborder="0" allowfullscreen></iframe>
+   
+4. Ushuaia:  
    Das Ende der Welt - wir kommen...   
    
    
