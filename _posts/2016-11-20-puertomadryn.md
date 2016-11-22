@@ -10,7 +10,7 @@ ref: Wale
 archive: false
 comments: true
 featured: false
-imagefeature: november/P1020960_small.JPG
+imagefeature: november/P1020860_small.JPG
 ---
 
 Da sind wir doch wirklich die letzten 2 Wochen nur 200km Rad gefahren. Kaum zu glauben, eigentlich sind wir nur bis zur Schule und zurück geradelt. Das hat uns auch wieder ein kleines Packet Zusatzenergie gebracht, andere würden es Fett nennen.
@@ -39,7 +39,7 @@ Um diese Naturschauspiele auch sehen zu können, haben wir unser Fortbewegungsmi
 
 Die Bootstour - Avistaje de Ballena - war ganz ausgezeichnet. Nachdem wir erst im Trüben gestochert haben, haben wir dann mehrere Weibchen mit Jungen gefunden. Bzw. wurden wir von anderen Booten darauf hingewiesen nachdem wir selber keine fanden. Die ganzen Bootstourunternehmen kooperieren nämlich miteinander. Die Firma wo wir zunächst nachfragten war auch voll und hat uns dann an eine andere weiterverwiesen. Eines der Wal-Päarchen beschäftigte sich eine ganze Weile mit uns. Sie scheinen sehr neugierig zu sein. Das Junge schwann mehrmals um unser Boot während die Mutter aufpasste und dabei sogar einmal direkt unter uns durch getaucht ist. Ziemlich beeindruckend, die Haut sieht viel weicher aus als Martha es sich vorstellte und sogar das 4 Monate alte Junge hatte schon Muscheln auf dem Kopf. Anhand dem Muschelmuster können die Tiere identifiziert werden.
 
-![Walflosse]({{ site.baseurl}}/images/november/P1020798_small.JPG)  
+![Walflosse]({{ site.baseurl}}/images/november/P1020830_small.JPG)  
 *Walflosse*
 
 
