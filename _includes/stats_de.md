@@ -1,11 +1,11 @@
+**letztes Update: 22/11/2016**
+
 ## Gesamtstatistiken
 
 Gesamt km (getrackt): 2590.84  
 Gesamt Tage auf dem Rad: 36  
 km ohne Platten: bisher alle!  
 Anzahl angebotener Lifts: 3
-
-free offered lifts: 3
 
 |  | Max | Tag | Min | Tag |  
 | --- |---:| :---:| ---:| :---:|   

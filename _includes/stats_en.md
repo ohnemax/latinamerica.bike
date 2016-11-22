@@ -1,8 +1,12 @@
+**last update: 22/11/2016**
+
 ## overall statistics
 
 total km (tracked): 2590.84  
 days spent on the bike: 36  
 km without punctures: all!  
+free offered lifts: 3
+
 |  | max | day | min | day |  
 | --- |---:| :---:| ---:| :---:|   
 | distance | 108.86 | [19](http://www.latinamerica.bike/track/d19en) |23.18|[22](http://www.latinamerica.bike/track/d22en) |
