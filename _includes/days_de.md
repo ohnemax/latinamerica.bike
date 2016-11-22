@@ -1,4 +1,4 @@
-## Radlertageinfos 
+## Radlertageinfos
 
 | Tag | von | nach | Distanz | durchschnittliche km/h | max km/h | Höhenmeter hoch | Höhenmeter runter |
 |[1](http://www.latinamerica.bike/track/d1) |Buenos Aires | Tigre |36.86 |12.13 |11.99 |0.00 |0.00 |
