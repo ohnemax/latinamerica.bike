@@ -8,7 +8,7 @@ tags: [Zahlen]
 chart: true
 ---
 
-{% capture my-include %} {% include stats_de.md%}{%endcapture%}
+{% capture my-include %} {% include stats_en.md%}{%endcapture%}
 {{my-include | markdownify}}
 
 ## small goals
