@@ -24,7 +24,7 @@ Unseren ersten Versuch die größten Säugetiere zu sehen, starteten wir am Woch
 
 Montags ging dann unser Sprachkurs los. Wir waren auf die irrwitzige Idee gekommen, dass wir dort auch mal Leute kennenlernen. Dem war nicht so, wir waren mit unserer Lehrerin alleine. Unser "Privatunterricht" begann meist schon um 8.30h. Nach unseren 4 Stunden unterricht täglich, dem frühen aufstehen und der guten Kaffeeversorgung plus ab und an hervorragendes Eis, waren wir meist so geplättet, dass wir erstmal Siesta hielten bevor wir uns gen späten Naxhmittag wieder aus dem Zelt bewegten. Hinzu kam noch, dass wir 2 Tage lang laufen mussten, weil das nöxhste Rad Ersatzteile benötigte. Marthas Vorderradnabe hatte den Geist aufgegeben. Der nöchste Fahrradhändler unseres Vertrauens hat uns mehrmals geholfen -  ["Alpataco"](http://www.alpatacobike.com).
 
-Wale, dass ist der Grund warum diese Stadt auch schon im Winter und Frühling vor Touristen platzt. Puerto Madryn liegt nämlich am Zugang zur Halbinsel Valdes. Die Wale - Ballena franca austral - kommen hierher um ihre Jungen zu gebären und sich erneut schwängern zu lassen. Dass sie genau hierhin kommen liegt an der Form der Halbinsel, die zwei große ruhige Buchten umschließt. Hier können sie in Ruhe ihre Jungen aufziehen und sie leicht an der Wasseroberfläche halten ohne gegen hohe Wellen ankämpfen zu müssen. Die Fettschicht der Jungen ist nich nicht groß genug, als dass sie gechillt an der Wasseroberfläche rumhängen können.
+Wale, dass ist der Grund warum diese Stadt auch schon im Winter und Frühling vor Touristen platzt. Puerto Madryn liegt nämlich am Zugang zur Halbinsel Valdes. Die Wale - der Südkaper - Ballena franca austral - kommen hierher um ihre Jungen zu gebären und sich erneut schwängern zu lassen. Dass sie genau hierhin kommen liegt an der Form der Halbinsel, die zwei große ruhige Buchten umschließt. Hier können sie in Ruhe ihre Jungen aufziehen und sie leicht an der Wasseroberfläche halten ohne gegen hohe Wellen ankämpfen zu müssen. Die Fettschicht der Jungen ist nich nicht groß genug, als dass sie gechillt an der Wasseroberfläche rumhängen können.
 
 ![Mutter mit Jungem]({{ site.baseurl}}/images/november/P1020872_small.JPG)  
 *Mutter mit Jungem*
@@ -60,10 +60,10 @@ Wir sind dann zum Busbahnhofschalter gegangen. Letzte Woche hatten wir dort scho
 
 So kamen wir dann mit gepackten Rädern heute morgen am Bahnhof an. Als Martha nochmal am Schalter fragte, hieß es, dass ginge heute gar nicht. Wir wollten uns aber nicht abwimmeln lassen und entschieden uns auf den Bus zu warten und selber zu fragen. Die ersten Busse lehnten ab, waren aber deutlich freundlicher und hilfsbereiter als die Schaltermenschen. Nachdem wir die meisten Vorräte während des Wartens schon aufgegeseen hatten, bzw Moritz Buch ausgelesen und unsere Hoffnung, dass wir noch mitgenommen werden, auf dem Tiefpunkt war, wurden wir dann doch eingesammelt. 
 
-So sitzen wir also jetzt im Bus Richtug Süden und tippen diesen Eintrag. Während dessen sind diverse Tagesetappen an uns vorbeigerauscht. november
+So sitzen wir also jetzt im Bus Richtug Süden und tippen diesen Eintrag. Während dessen sind diverse Tagesetappen an uns vorbeigerauscht. 
 
 ![Viele Tagesetappen gespart]({{ site.baseurl}}/images/november/IMG_20161120_192125_small.jpg)  
-*Viele Tagesetappen gespart*
+*Viele Tagesetappen gespart...*
 
 
 
