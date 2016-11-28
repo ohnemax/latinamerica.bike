@@ -7,6 +7,12 @@ tags: [cycling, camping, blog]
     {% assign langposts=site.posts | where:"lang", page.lang %}
     {% assign posts=langposts | where:"archive", false %}
     {% for post in posts %}
+    
+    {% if post.category == "track" %} 
+    <!-- we do nothing -->
+    {% else if %} 
+    <!-- if it's another category, we display the article -->
+     
     <article class="notepad-index-post post row">
         <div class="small-12 medium-3 large-2 columns datetime">
             <span class="notepad-post-meta">
@@ -42,4 +48,7 @@ tags: [cycling, camping, blog]
             
         </div>
     </article>
+    
+     {% endif %} 
+ 
 	{% endfor %}
