@@ -1,3 +1,4 @@
+
 ## information about cycling days 
 
 | day | from | to | distance | average km/h | max km/h | altitude uphill | altitude downhill |
@@ -32,8 +33,15 @@
 |[29](http://www.latinamerica.bike/track/d29en) |El Condor | Bajada Echandi |71.26 |11.31 |19.86 |1132.72 |1081.92 |
 |[30](http://www.latinamerica.bike/track/d30en) |Bajada Echandi | Caleta de los Loros |51.88 |9.91 |19.32 |602.07 |618.96 |
 |[31+](http://www.latinamerica.bike/track/d31en) |Caleta de los Loros | Las Grutas |124.57 |21.56 |75.77 |1367.79 |1359.81 |
-|[31](http://www.latinamerica.bike/track/d31en) |Las Grutas | Est. de Servicio Royal |31.99 |14.24 |18.83 |531.39 |394.91 |
-|[32](http://www.latinamerica.bike/track/d32en) |Est. de Servicio Royal | Sierra Grande |89.02 |16.36 |25.30 |320.36 |244.28 |
 |[34](http://www.latinamerica.bike/track/d34en) |Sierra Grande | Parador Puerto Lobos |55.25 |15.59 |28.35 |369.02 |490.13 |
 |[35](http://www.latinamerica.bike/track/d35en) |Parador Puerto Lobos | Puerto Madryn |90.89 |22.94 |29.36 |416.21 |577.08 |
 |[36](http://www.latinamerica.bike/track/d36en) |Puerto Madryn | El Doradillo - Puerto Madryn |48.34 |12.39 |19.62 |802.68 |798.31 |
+|[42](http://www.latinamerica.bike/track/d42en) |Tolhuin | Hosteria Petrel |54.84 |13.14 |19.07 |725.71 |722.98 |
+|[40](http://www.latinamerica.bike/track/d40en) |San Sebastian | Rio Grande |93.89 |17.78 |26.86 |213.60 |220.74 |
+|[43](http://www.latinamerica.bike/track/d43en) |Hosteria Petrel | Ushuaia |61.20 |50.93 |0.00 |898.24 |996.95 |
+|[32](http://www.latinamerica.bike/track/d32en) |Las Grutas | Est. de Servicio Royal |31.99 |14.24 |18.83 |531.39 |394.91 |
+|[33](http://www.latinamerica.bike/track/d33en) |Est. de Servicio Royal | Sierra Grande |89.02 |16.36 |25.30 |320.36 |244.28 |
+|[37](http://www.latinamerica.bike/track/d37en) |Rio Gallegos | Klippe |86.23 |17.14 |19.90 |275.71 |271.56 |
+|[38](http://www.latinamerica.bike/track/d38en) |Klippe | Cerro Sombrero |76.20 |13.91 |21.14 |735.31 |710.37 |
+|[39](http://www.latinamerica.bike/track/d39en) |Cerro Sombrero | San Sebastian |119.26 |12.58 |21.23 |388.73 |474.63 |
+|[41](http://www.latinamerica.bike/track/d41en) |Rio Grande | Tolhuin |110.62 |19.81 |31.73 |943.20 |889.03 |

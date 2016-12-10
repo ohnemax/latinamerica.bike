@@ -7,6 +7,19 @@ import os
 
 ######import list of files
 
+
+tl=[1,6,7]
+tl2=[True, False, False]
+
+#filtered_list = [i for indx,i in enumerate(tl) if tl2[indx] == True]
+filtered_list = [i for (i, v) in zip(tl, tl2) if v]
+
+
+print(filtered_list)
+exit(0)
+
+
+
 verzeichnis="./"
 tracks_verzeichnis=verzeichnis+"tracks/"
 
@@ -14,9 +27,12 @@ l=[]
 for file in os.listdir(tracks_verzeichnis):
     endung=os.path.basename(file)[-3:]
     if(endung=="gpx"):
+        
         filename=file
         l+=[file]
-#l=l[42:]
+l=l[:-3]
+print(l)
+
 
 #print(l)
 #print(os.listdir(verzeichnis))
@@ -364,71 +380,74 @@ f.close()
 ########Etappenzielstatiatik
 #def variable
 
+lez = {}
+lez[1] = (1, 11)
+lez[2] = (12, 20)
 
-######### Track-Einträge
-skripte_verzeichnis=verzeichnis+"skripte/"
-fhn=skripte_verzeichnis+"track-beschreibung"
-fn =open(fhn, "r")
+ez1=(1,11)
+ez2=(12,20)
+ez3=(24, 35)
+ez4=(39, 40)
 
-#text= fn.read()
-days=[]
-date=[]
-desc_de=[]
-desc_en=[]
-ident=[]
+#lez=[ez1]+[ez2]+[ez3]+[ez4]
+
+#lez = [(1, 11),
+ #      (12, 20), #ez2
+  #     (24,
 
 
-for line in fn:
-   if line.strip()=="":
-       continue
-   print(line)
-   #print("blabla")
-   ee = line.split("|")
-   ee=ee[1:-1]
-   print("ee")
-   print(ee)
-   
-   days+=[ee[0]]
-   date+=[ee[1]]
-   desc_de+=[ee[2]]
-   desc_en+=[ee[3]]
-   ident+=[ee[4]]
-   #print("days:")
-   #print(days)
-   
-for element in range(1,len(days)):   
+ezdist=0
+eztime=0       
+ezakmh=0
 
-    head_layout="---   \nlayout: post \n"
-    head_title_de="title: 'Radlertag "
-    head_title_de+= "{:s}'  \n".format(days[element].strip())
+
+#for elements in range(len(lez)):
+    #var_ez="ez"+str(elements)
+    #var_ez=var(var_ez)
+    #print(var_ez)
+
+for key in lez:
+    print(lez[key][0])
+         
+
+    for i in range(lez[key][0],lez[key][1]):
+    #ez_dist+=
+        print(i)
     
-    head_title_en="title: 'Biking day "
-    head_title_en+= "{:s}'  \n".format(days[element].strip())
-    head_author="author: team \n"
-    head_date= "modified: "
-    head_date+= "{:s}\n".format(date[element].strip())
-    head_category="category: track \n"
-    head_lang_de="lang: de \n"
-    head_lang_en="lang: en \n"
-    head_ref="ref: d"
-    head_ref+="{:s}\n".format(days[element].strip())
-    head_descr_de=desc_de[element]+"\n\n"
-    head_descr_en=desc_en[element]+"\n\n"
-    head_end="archive: false \ncomments: true \nfeatured: false \n--- \n\n"
-    maps="<iframe width='480' height='360' src='http://track-kit.net/maps_s3/?v=embed&track="
-    maps+="{:s}".format(ident[element].strip())
-    maps+=".gpx' frameborder='0' allowfullscreen></iframe>"
+        ls=l[i]
+   
+####vin hier an gibts schon, nur nicht eingerückt   
+    ###!change to corresponding folder
+        fn = tracks_verzeichnis+ls
+    #~/storage/shared/latinamerica.bike/tracks/"+filename
+    
+        gpx_file = open(fn, 'r')
+        gpx = gpxpy.parse(gpx_file)
+    #print(gpx)
 
-    posts_verzeichnis=verzeichnis+"_posts/"
-    fhn_de=posts_verzeichnis+"{:s}-d{:s}.md".format(date[element].strip(),days[element].strip())
-    fhn_en=posts_verzeichnis+"{:s}-d{:s}en.md".format(date[element].strip(),days[element].strip())
+        for track in gpx.tracks:
+        ###count for gefahr
+     #   print(track)
+     #   print(track.description[0])
+        
+         
+        ###extract detailed info
+            dist = track.length_3d()/1000
+            print(dist)
+            maxkmh = track.get_moving_data()[4]/1000*3600
+##neue variable
+            time=track.get_moving_data()[0]/3600
+            akmh =dist/(track.get_moving_data()[0]/3600)
+            hoch = track.get_uphill_downhill()[0]
+            runter = track.get_uphill_downhill()[1]
+#ab hier neu        
+            ezdist+=dist
+            eztime+=time
+        
+        
+        ezakmh=ezdist/eztime
+    print(ezdist)
+    print(eztime)
+    print(ezakmh)    
 
-    wtf_de=head_layout+head_title_de+head_author+head_date+head_category+head_lang_de+head_ref+head_end+head_descr_de+maps
-    f = open(fhn_de, "w")
-    f.write(wtf_de)
-    f.close()
 
-    wtf_en=head_layout+head_title_en+head_author+head_date+head_category+head_lang_en+head_ref+head_end+head_descr_en+maps
-    f = open(fhn_en, "w")
-    f.write(wtf_en)
-    f.close()
