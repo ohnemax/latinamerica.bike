@@ -1,6 +1,5 @@
-## Radlertageinfos 
-|  | Max | Tag | Min | Tag | 
-| --- |---:| :---:| ---:| :---:|  
-| Distanz | 100.58 | [4](http://www.latinamerica.bike/track/d4) |57.21|[4](http://www.latinamerica.bike/track/d4) |
-| durchschnittliche km/h  | 15.57|[4](http://www.latinamerica.bike/track/d4) |13.99|[2](http://www.latinamerica.bike/track/d2) |
-| max km/h  | 22.21|[2](http://www.latinamerica.bike/track/d2) |19.32|[4](http://www.latinamerica.bike/track/d4) |
+letztes Update: 10/11/2016
+
+## Radlertageinfos
+
+| Tag | von | nach | Distanz | durchschnittliche km/h | max km/h | Höhenmeter hoch | Höhenmeter runter ||[4](http://www.latinamerica.bike/track/d4) |49.363332 |Zarate | Ruta 14 Esso |13.54 |19.88 |444.87 |445.92 |

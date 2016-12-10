@@ -29,7 +29,13 @@ chart: true
    <iframe width="480" height="360" src="http://track-kit.net/maps_s3/?v=embed&track=232100.gpx" frameborder="0" allowfullscreen></iframe>
    
 4. Ushuaia:  
-   Das Ende der Welt - wir kommen...   
+   Tage 37-43
+   
+   <iframe width="480" height="360" src="http://track-kit.net/maps_s3/?v=embed&track=232845.gpx" frameborder="0" allowfullscreen></iframe>
+
+5. El Chaltén:
+
+
    
    
 {% capture my-include %} {% include days_de.md%}{%endcapture%}
