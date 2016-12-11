@@ -88,7 +88,7 @@ class trip:
             self.calculate()
         
     # Get information.
-    # Distances are in km, speeds are in km/h and times are strings like hh:mm:ss
+    # Distances are in km, speeds are in km/h and times are either strings like hh:mm:ss or floats in seconds
     def maxspeed(self):
         self.checkandload()
         return self.maxS * 3.6
@@ -121,6 +121,10 @@ class trip:
         seconds = int(self.totalT) - hours * 3600 - minutes * 60
         return "{:02d}:{:02d}:{:02d}".format(hours, minutes, seconds)
 
+    def totaltimeseconds(self):
+        self.checkandload()
+        return self.totalT
+
     def movingtime(self):
         self.checkandload()
         minutes = int(self.movingT / 60)
@@ -128,6 +132,10 @@ class trip:
         minutes -= hours * 60
         seconds = int(self.movingT) - hours * 3600 - minutes * 60
         return "{:02d}:{:02d}:{:02d}".format(hours, minutes, seconds)
+
+    def movingtimeseconds(self):
+        self.checkandload()
+        return self.movingT
 
     def trackname(self):
         self.checkandload()
