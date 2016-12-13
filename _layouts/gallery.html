@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% include head.html %}
+</head>
+<body class="post-template page" itemscope itemtype="http://schema.org/WebPage">
+
+<main id="notepad-page-container" class="notepad-page-container" role="main">
+    
+    
+        <header class="notepad-page-header">
+            <div class="notepad-page-menu-header">
+                
+                              <div class="notepad-blog-menu">      
+    <div class="notepad-mobile-menu show-for-small">
+        <a href="#"><i class="fa fa-bars"></i></a>
+    </div>
+    <ul class="notepad-menu">
+        <li class="notepad-mobile-close-btn show-for-small text-right">
+            <a href="#"><i class="fa fa-times"></i></a>
+        </li>
+	{% for link in site.links[page.lang] %}
+        <li>
+          <a href="{{ site.url }}/{{ link[1].url }}">{{ link[1].title }}</a>
+        </li>
+	{% endfor %}
+
+	{% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+	{% for post in posts %} <li><i><a href="{{ site.url }}/{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a></i></li> {% endfor %}
+
+	{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+	{% for page in pages %} <li><i><a href="{{ site.url }}/{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a></i></li> {% endfor %}
+    </ul>
+       </div>
+            </div>
+	    <div class="gallerymenu">
+	      <ul>
+	      <li><a href="{{ site.url }}/gallery/index-{{ page.lang }}">{{ site.textfavorites[page.lang] }}</a></li>
+	      {% for gallerylink in site.data.galeriekategorien %}
+	      <li>
+	        <a href="{{ site.url }}/gallery/{{ gallerylink.folder }}-{{ page.lang }}">{{ gallerylink.link }}</a>
+		</li>
+	      {% endfor %}
+	    </div>
+            <div class="notepad-page-title row">
+                <div class="small-12 columns">
+                    <h1>{{ page.title }}</h1>
+                </div>
+            </div>
+        </header>
+
+<article class="notepad-page-content">
+                    <div>{{ content }}</div>
+</article>
+        <div class="cf"></div>
+    {% include footer.html %}
+</main>
+
+{% include scripts.html %}  
+</body>
+</html>

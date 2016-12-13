@@ -1069,3 +1069,57 @@ img.mfp-img {
   top: 0;
   right: 0;
   padding-top: 0; }
+
+div.gallerymenu {
+    float: right;
+}
+
+div.gallerymenu ul {
+    list-style: none;
+    margin-top: 3%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+    align: right;
+    position: relative;
+    right: 0px;
+}
+
+div.gallerymenu ul li {
+    display: inline-block;
+    margin: 0 0 0.5em 0.5em
+}
+
+ul.gallerygrid {
+    list-style: none;
+    font-size: 0px;
+    margin-left: -2.5%;    
+}
+
+ul.gallerygrid li {
+    display: inline-block;
+    margin: 0 0 2.5% 2.5%;
+    font-size: 16px;
+    font-size: 1rem;
+    vertical-align: middle;
+    width: 46%;
+}
+
+ul.gallerygrid li img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 10px;
+}
+
+ul.gallerygrid li div {
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+	ul.gallerygrid {
+		margin-left: 0;
+	}
+	ul.gallerygrid li {
+		width: 100% !important; /* over-ride all li styles */
+		margin: 0 0 20px;
+	}
+}
