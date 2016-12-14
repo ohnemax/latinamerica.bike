@@ -2,10 +2,10 @@
 {% assign images=monthimages | where:"show", "x" %}
 
 <ul class="gallerygrid">
-{% for file in images %}
-<li>
-  <a class="fancybox" rel="group" href="{{ site.url }}/images/{{ file.folder }}/{{ file.filename }}" title="{{ file[page.lang] }}"><img src="{{ site.url }}/images/{{ file.folder }}/{{ file.filename }}" alt="" /></a>
-  <div>{{ file[page.lang] }}</div>
-</li>
-{% endfor %}
+  {% for file in images %}
+  <li>
+    <a class="fancybox" rel="group" href="{{ site.url }}/images/{{ file.folder }}/{{ file.filename }}" title="{{ file[page.lang] }}"><img src="{{ site.url }}/images/{{ file.folder }}/thumb/{{ file.thfilename }}" alt="" /></a>
+    <div>{{ file[page.lang] }}</div>
+  </li>
+  {% endfor %}
 </ul>
