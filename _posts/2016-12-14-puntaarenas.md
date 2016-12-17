@@ -13,7 +13,7 @@ featured: false
 imagefeature: december/P1030041_small.JPG
 ---
 
-Im Anschluss an eine regnerische Fahrt nach Ushuaia bekamen wir die Info, dass es die kommende durchgängig regnen sollte. Umso überraschter waren wir, als wir am nächsten Tag von strahlenden Sonnenschein geweckt wurden. Wir hatten zuerst unsere Taschen gepackt um das Hostel zu verlassen, entschieden uns dann aber doch noch zu bleiben und ein bischen zu wandern. So radelten und stiefelten wir bis zum 'Glaciar Martial'.
+Im Anschluss an eine regnerische Fahrt nach Ushuaia bekamen wir die Info, dass es die kommende Woche durchgängig regnen sollte. Umso überraschter waren wir, als wir am nächsten Tag von strahlenden Sonnenschein geweckt wurden. Wir hatten zuerst unsere Taschen gepackt um das Hostel zu verlassen, entschieden uns dann aber doch noch zu bleiben und ein bischen zu wandern. So radelten und stiefelten wir bis zum 'Glaciar Martial'.
 
 ![Gletscher, sogar mit frischem Schnee]({{ site.baseurl }}/images/december/DSCF2950_small.JPG)  
 *Gletscher, sogar mit frischem Schnee*
@@ -40,12 +40,15 @@ Nach einer Nacht im Zelt in der Wildnis spazierten wir auf die "Pampa Alta", ein
 
 Abends ging es zurück ins Hostel. Gerne wären wir auch länger im Park geblieben, aber andere Reisende hatten uns neue Ideen gegeben: Von Ushuaia mit dem Boot noch weiter in den Süden, nach Puerto Williams, Chile, der wirklich südlichsten Stadt der Welt.
 
-![Weit im Süden]({{ site.baseurl }}/images/december/P1030283_small.JPG)
+![Weit im Süden]({{ site.baseurl }}/images/december/P1030283_small.JPG)  
 *Weit im Süden*
 
-Wir zelteten einen Tag dort neben einem Wasserfall und fuhren dann mit einer sehr großen Fähre in Richtung Norden. Eigentlich sollte man das ganze eher "Mini-Kreuzfahrt" nennen. 30 Stunden auf dem Wasser, vier hervorragende Mahlzeiten, bequeme Liegesitze und ein bischen geschmuggelten Wein und Rum. Da die Bootsroute durch den Beaglekanal und weitere enge Wasserstraßen und Fjorde führte, gab es sehr viel zu sehen. Sogar Gletscher, die bis zum Meeresrand reichten und wohl auch manchmal kleine Eisberge in die Welt setzen. Nachdem Moritz Martha morgens etwas zu früh geweckt hatte, entdeckte sie einen vorbeischwimmenden Wal. Und damit es uns nicht zu langweilig wurde, kamen in den nächsten Stunden auch noch Robben und Delfine in die Nähe unseres Bootes. Sehr toll.
+Wir zelteten einen Tag dort neben einem Wasserfall und fuhren dann mit einer sehr großen Fähre in Richtung Norden. Eigentlich sollte man das ganze eher "Mini-Kreuzfahrt" nennen. 30 Stunden auf dem Wasser, vier hervorragende Mahlzeiten, bequeme Liegesitze und ein bischen geschmuggelten Wein und Rum.
 
-<iframe align='center' width='480' height='360' src='http://track-kit.net/maps_s3/?v=embed&track=233109.gpx' frameborder='0' allowfullscreen></iframe>
+<iframe text-align='center' width='480' height='360' src='http://track-kit.net/maps_s3/?v=embed&track=233109.gpx' frameborder='0' allowfullscreen></iframe>
+
+Da die Bootsroute durch den Beaglekanal und weitere enge Wasserstraßen und Fjorde führte, gab es sehr viel zu sehen. Sogar Gletscher, die bis zum Meeresrand reichten und wohl auch manchmal kleine Eisberge in die Welt setzen. Nachdem Moritz Martha morgens etwas zu früh geweckt hatte, entdeckte sie einen vorbeischwimmenden Wal. Und damit es uns nicht zu langweilig wurde, kamen in den nächsten Stunden auch noch Robben und Delfine in die Nähe unseres Bootes. Sehr toll.
+
 
 ![Schau mal da!]({{ site.baseurl }}/images/december/P1030322_small.JPG)  
 *Schau mal da!*
