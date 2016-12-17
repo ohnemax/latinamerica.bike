@@ -68,12 +68,15 @@ links:
       title: Home
       url: /index-en
       icon: home
-    statistics:
-      title: Statistics
-      url: /stats_en
     about:
       title: About
       url: /about
+    statistics:
+      title: Statistics
+      url: /stats_en
+    gallery:
+      title: Gallery
+      url: /gallery/index-en
     categories:
       title: Categories
       url: /categories
@@ -85,12 +88,15 @@ links:
       title: Home
       url: /
       icon: home
-    statistics:
-      title: Statistiken
-      url: /stats_de  
     about:
       title: Über
       url: /ueber
+    statistics:
+      title: Statistiken
+      url: /stats_de
+    gallery:
+      title: Galerie
+      url: /gallery/index-de
     categories:
       title: Kategorien
       url: /kategorien
