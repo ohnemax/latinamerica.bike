@@ -2,22 +2,38 @@
 
 import gpxpy
 import gpxpy.gpx
-
 import os
-
+import cyclegpx
 ######import list of files
 
+####filter lists###
+#tl=[1,6,7]
+#tl2=[True, True, False]
+
+#filtered_list = [i for indx,i in enumerate(tl) if tl2[indx] == True]
+#filtered_list = [i for (i, v) in zip(tl, tl2) if v]
+
+#print(filtered_list)
+#exit(0)
+
+#####get list of files
+
 verzeichnis="./"
-tracks_verzeichnis=verzeichnis+"tracks/"
+track_verzeichnis=verzeichnis+"tracks/"
 
 l=[]
-for file in os.listdir(tracks_verzeichnis):
+for file in os.listdir(track_verzeichnis):
     endung=os.path.basename(file)[-3:]
     if(endung=="gpx"):
+        
         filename=file
         l+=[file]
+
 l.sort()        
+#print(l)        
 l=l[:-1]
+print(l)
+
 
 #print(l)
 #print(os.listdir(verzeichnis))
@@ -36,6 +52,15 @@ ldate=[]
 gesamtdist=0
 gesamtday=0
 
+aldist=[]
+alakmh=[]
+alday=[]
+almaxkmh=[]
+altime=[]
+ezldist=[]
+
+ltf=[]
+        
 
 ###var für nicht selbstgefahrene km
 countgefahr=0
@@ -45,58 +70,63 @@ for filename in l:
     gefahr=False
     
     ###!change to corresponding folder
-    fn = tracks_verzeichnis+filename
-    #~/storage/shared/latinamerica.bike/tracks/"+filename
+    fn = track_verzeichnis+filename
+    #~/storage/shared/latinamerica.bike/cg./"+filename
     
-    gpx_file = open(fn, 'r')
-    gpx = gpxpy.parse(gpx_file)
-    print(gpx)
+    
+    cg = cyclegpx.trip(fn)
+    print(filename)
 
-    for track in gpx.tracks:
-        ###count for gefahr
-        print(track)
-        print(track.description[0])
-        if(track.description[0]=="*"):
-            gefahr=True
-            countgefahr+=+1
-            track.description=track.description[1:]
-        
-        ###extract detailed info per track
-        dist = track.length_3d()/1000
-        maxkmh = track.get_moving_data()[4]/1000*3600
-        akmh =dist/(track.get_moving_data()[0]/3600)
-        hoch = track.get_uphill_downhill()[0]
-        runter = track.get_uphill_downhill()[1]
-        date = track.name[0:10]
-        day = track.name[12:]
-        
-        ###include in list if all km were cycled
-        if not gefahr:
-            ldist+=[dist]
-            lday+=[day]
-            lmaxkmh+=[maxkmh]
-            lakmh+=[akmh]
-        
-        ###stats total
-        gesamtdist+=dist
-        #print(gesamtdist)
-        gesamtday+=1
+    cg.loadandparse()
+    cg.calculate()
+
+    descr=cg.trackdescription()
        
+    if(descr[0]=="*"):
+        gefahr=True
+        countgefahr+=+1
+        descr=descr[1:]
     
-    ###extract track localities
+        
+    ###extract detailed info
+    dist = cg.totaldistance()
+    maxkmh = cg.maxspeed()
+    time=cg.movingtimeseconds()
+    akmh=cg.averagemovingspeed()
+    hoch = cg.climbingdistance()
+    runter = cg.descendingdistance()
+    date = cg.trackname()[:-3]
+    day = cg.trackname()[-2:]
+        
+    #add infos to list
+    aldist+=[dist]
+    alday+=[day]
+    almaxkmh+=[maxkmh]
+    alakmh+=[akmh]
+    altime+=[time]
+        
     
+    if gefahr == False:
+        ltf.append(True)
+    else: 
+        ltf.append(False)
+                      
+    ###stats total
+    gesamtdist+=dist
+    #print(gesamtdist)
+    gesamtday+=1
+    
+        
     count=0
     
-    while(track.description[count]!="-"):
+    while(cg.trackdescription()[count]!="-"):
         count=count+1
     
-    start=track.description[:count-1]   
-    end=track.description[count+1:] 
-    
-#######table of cycling days
-    head_de="| Tag | von | nach | Distanz | durchschnittliche km/h | max km/h | Höhenmeter hoch | Höhenmeter runter |\n"
-    head_en="| day | from | to | distance | average km/h | max km/h | altitude uphill | altitude downhill |\n"
-    
+    start=cg.trackdescription()[:count-1]   
+    end=cg.trackdescription()[count+1:] 
+
+
+        
     
     row = "|"
     row += "[{:s}".format(day)
@@ -117,10 +147,29 @@ for filename in l:
     table+=row + "\n"
 
 ##### 
+   
+#######table of cycling days
+head_de="| Tag | von | nach | Distanz | durchschnittliche km/h | max km/h | Höhenmeter hoch | Höhenmeter runter |\n"
+head_en="| day | from | to | distance | average km/h | max km/h | altitude uphill | altitude downhill |\n"
 
 print(head_de)    
 print(table)    
 #print("minmax")
+   
+#make list for countable kms
+print(ldist)
+
+ldist= [i for (i, v) in zip(aldist, ltf) if v]
+lday= [i for (i, v) in zip(alday, ltf) if v]
+lmaxkmh= [i for (i, v) in zip(almaxkmh, ltf) if v]
+lakmh= [i for (i, v) in zip(alakmh, ltf) if v]
+     
+      
+ ###extract track-localities
+
+############
+#####make files
+    
 
 ###print first infos of cycling days
 
@@ -128,7 +177,7 @@ subtitle_de="\n## Radlertageinfos \n\n"
 subtitle_en="\n## information about cycling days \n\n"
 
 includes_verzeichnis=verzeichnis+"_includes/"
-fhn_de=includes_verzeichnis+"days_de.md"
+fhn_de=includes_verzeichnis+"test-days_de.md"
 
 f = open(fhn_de, "w")
 f.write(subtitle_de)
@@ -136,7 +185,7 @@ f.write(head_de)
 f.write(table.replace("LANG",""))
 f.close()
 
-fhn_en=includes_verzeichnis+"days_en.md"
+fhn_en=includes_verzeichnis+"test-days_en.md"
 
 f = open(fhn_en, "w")
 f.write(subtitle_en)
@@ -339,7 +388,7 @@ update_en+="**\n\n"
 #####
 
 
-fhn_de=includes_verzeichnis+"stats_de.md"
+fhn_de=includes_verzeichnis+"test-stats_de.md"
 f = open(fhn_de, "w")
 f.write(update_de)
 f.write(statistic_de)
@@ -347,7 +396,7 @@ f.write(head_de)
 f.write(table_de.replace("LANG",""))
 f.close()
 
-fhn_en=includes_verzeichnis+"stats_en.md"
+fhn_en=includes_verzeichnis+"test-stats_en.md"
 f = open(fhn_en, "w")
 f.write(update_en)
 f.write(statistic_en)
@@ -375,12 +424,12 @@ ident=[]
 for line in fn:
    if line.strip()=="":
        continue
-   print(line)
+   #print(line)
    #print("blabla")
    ee = line.split("|")
    ee=ee[1:-1]
-   print("ee")
-   print(ee)
+   #print("ee")
+   #print(ee)
    
    days+=[ee[0]]
    date+=[ee[1]]
@@ -422,3 +471,130 @@ for element in range(1,len(days)):
     f = open(fhn_en, "w")
     f.write(wtf_en)
     f.close()
+
+
+
+
+########Etappenzielstatiatik
+#def variable
+
+lez = {}
+lez[1] = (1, 11, "Rundreise Uruguay", 230879)
+lez[2] = (12, 20, "Bahia Blanca", 230881)
+lez[3] = (24, 35, "Puerto Madryn", 232100)
+lez[4] = (37, 43, "Ushuaia", 232845)
+
+lrow_ez=[]
+lrow_ez_en=[]
+
+for key in lez:
+    
+    lvar1=lez[key][0]
+    
+    lvar2=lez[key][1]    
+
+    
+    eztime=0       
+    ezakmh=0
+    ezldist=[] 
+    ezltime=[]   
+     
+    for i in range(lez[key][0]-1,lez[key][1]+1):
+    #ez_dist+=
+        
+        ezdist=0
+    
+#ezdist+=dist
+        #print(aldist)
+        ezldist=aldist[lvar1-1:lvar2:]
+            
+        for element in ezldist:
+            ezdist+=element
+        #print(ezldist)
+        #print("ezdist")
+        #print(ezdist)
+        
+        ezltime=altime[lvar1-1:lvar2:]
+        
+        for time in ezltime:
+            eztime+=time
+        
+        eztime=eztime/3600
+        
+        
+    ezakmh=ezdist/eztime
+    #print("dist,time,akmh")
+    #print(ezdist)
+    #print(eztime)
+    #print(ezakmh)    
+    
+    
+    row_ez= "{:.0f}. Etappenziel: ".format(i)
+    row_ez+= lez[key][2]
+    row_ez+= "\n\n"
+    row_ez+= "Reisetage: {:.0f} - {:.0f}  \n".format(lvar1, lvar2)
+    row_ez+= "Etappendistanz: {:.2f}  \n".format(ezdist)
+    row_ez+= "Etappenzeit: {:.2f}  \n".format(eztime)
+    row_ez+= "Etappendurchschnittsgeschwindigkeit: {:.2f}  \n\n".format(ezakmh)
+    row_ez+= "<iframe width='480' height='360' src='http://cg.kit.net/maps_s3/?v=embed&cg.{:.0f}.gpx' frameborder='0' allowfullscreen></iframe>\n".format(lez[key][3])
+   
+    
+    #print(row_ez)
+     
+    lrow_ez+=[row_ez]
+    
+    ####write row for en
+
+    row_ez_en= "{:.0f}. interim goal: ".format(i)
+    row_ez_en+= lez[key][2]
+    row_ez_en+= "\n\n"
+    row_ez_en+= "travelling days: {:.0f} - {:.0f}  \n".format(lvar1, lvar2)
+    row_ez_en+= "distance: {:.2f}  \n".format(ezdist)
+    row_ez_en+= "time: {:.2f}  \n".format(eztime)
+    row_ez_en+= "average speed: {:.2f}  \n\n".format(ezakmh)
+    row_ez_en+= "<iframe width='480' height='360' src='http://cg.kit.net/maps_s3/?v=embed&cg.{:.0f}.gpx' frameborder='0' allowfullscreen></iframe>\n".format(lez[key][3])
+   
+    
+    #print(row_ez_en)
+     
+    lrow_ez_en+=[row_ez_en]
+
+
+
+
+###write file for etappenziel
+includes_verzeichnis=verzeichnis+"_includes/"
+
+ez_de=includes_verzeichnis+"ez_de.md"
+
+print(lrow_ez)
+rowlrow=""
+for i in lrow_ez:
+    rowlrow+=i 
+    print(i)
+    rowlrow+="\n"
+    
+    
+    
+f = open(ez_de, "w")
+f.write(rowlrow)
+#f.write(head_de)
+f.close()
+
+
+##english file
+ez_en=includes_verzeichnis+"ez_en.md"
+
+print(lrow_ez_en)
+rowlrow_en=""
+for i in lrow_ez_en:
+    rowlrow_en+=i 
+    print(i)
+    rowlrow_en+="\n"
+    
+    
+    
+f = open(ez_en, "w")
+f.write(rowlrow_en)
+#f.write(head_de)
+f.close()
