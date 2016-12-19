@@ -36,8 +36,13 @@ class trip:
         # store descriptive information
         self.name = gp.tracks[0].name
         self.description = gp.tracks[0].description
-        # takes only points from first segment 
         self.points = gp.tracks[0].segments[0].points
+        print(type(self.points))
+        self.points = []
+        for seg in gp.tracks[0].segments:
+            self.points += seg.points
+        # takes only points from first segment 
+        # self.points = gp.tracks[0].segments[0].points
 
         self.parsed = True
 
