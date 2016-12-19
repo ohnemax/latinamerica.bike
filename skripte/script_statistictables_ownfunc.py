@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #####
 
 import gpxpy
@@ -128,16 +129,15 @@ for filename in l:
 
         
     
-    row = "|"
+    row = u"|"
     row += "[{:s}".format(day)
     if (gefahr):
        row+="+]"
     else:
        row+="]"    
     row += "(http://www.latinamerica.bike/track/d"+day+"LANG) |"
-    
-    row += "{:s} |".format(start) 
-    row += "{:s} |".format(end) 
+    row += u"{:s} |".format(start)
+    row += u"{:s} |".format(end)
     row += "{:.2f} |".format(dist) 
     row += "{:.2f} |".format(akmh) 
     row += "{:.2f} |".format(maxkmh) 
