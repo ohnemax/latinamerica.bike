@@ -9,27 +9,24 @@ chart: true
 include map
 
 
- <div id="map"></div>
-    <script>
-      function initMap() {
+<div id="map"></div>
+<script>
+function initMap() {
         // Create a map object and specify the DOM element for display.
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          scrollwheel: false,
-          zoom: 8
-        });
-      }
+var map = new google.maps.Map(document.getElementById('map'), {
+center: {lat: -34.397, lng: 150.644},
+scrollwheel: false,
+zoom: 8
+});
+}
 
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
-    async defer></script>
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+async defer></script>
     
     
     
     
-
-
-_---------
 ## tracktest
 
 <iframe src='http://www.trackprofiler.com/track:qvtyfy/embeded?width=400&map=1&title=0&graph=1&height=550' width='400' height='550' scrolling='no' frameborder='0' style='border: 1px solid #ebeded;'><a href='http://www.trackprofiler.com/track:qvtyfy'>test</a> on <a href='http://www.trackprofiler.com'>TrackProfiler</a></iframe>
