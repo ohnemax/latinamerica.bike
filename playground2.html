@@ -37,6 +37,8 @@ function initMap() {
     icon: image
   });
 
+
+//add infobox to marker
  var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
@@ -59,7 +61,7 @@ function initMap() {
       '</div>';
       
 var infowindow = new google.maps.InfoWindow({
-    content: contentString
+    content: image
   });
 
   var marker = new google.maps.Marker({
