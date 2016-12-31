@@ -4,7 +4,7 @@ title: At the end of the year
 author: team
 modified: 2016-12-31
 category: Radgeschichten
-tags: [Chile, Berge]
+tags: [Rückblick, Vorschau]
 lang: en
 ref: jahresende
 archive: false
