@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Zum Ende des Jahres
-author: ohnemax
+author: team
 modified: 2016-12-31
 category: Radgeschichten
 tags: [Chile, Berge]
@@ -22,5 +22,5 @@ Für uns geht es im neuen Jahr aufwärts, sowohl auf der imperialistischen Landk
 **Wir wünschen euch das Beste des neuen Jahres und "feliz año nuevo".**
 
 
-![Wer will, kann alle Berge erklimmen...]({{ site.url}}/images/december/DSCF3150_small.JPG)  
-*Wer will, kann alle Berge erklimmen...*
+![Wer will, kann alle Berge erklimmen!]({{ site.url}}/images/december/DSCF3150_small.JPG)  
+*Wer will, kann alle Berge erklimmen!*
