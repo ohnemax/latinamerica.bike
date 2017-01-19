@@ -46,7 +46,7 @@ Diese Fähre fährt nur bei gutem Wetter und wir haben auch ein paar Leute getro
 
 Nach guten 2 Stunden Bootsfahrt und weiteren 6km Rad kamen wir in Villa O'Higgins an, für uns der Beginn der Carretera Austral.
 
-![Lago O'Higgins - Beginn der Carretera Austral]({{ site.url}}/images/January/P1030601_small.JPG)
+![Lago O'Higgins - Beginn der Carretera Austral]({{ site.url}}/images/january/P1030601_small.JPG)
 *Lago O'Higgins - Beginn der Carretera Austral*
 
 
