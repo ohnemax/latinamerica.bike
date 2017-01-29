@@ -133,8 +133,8 @@ var infowindow2 = new google.maps.InfoWindow({
    
 //own marker clusters
 data.locations=[[-30.33,150.77],[-29,149.56]]
-markerImgl=["images/martha.jpg","images/team.jpg"]
-    for(var i in data.locations)
+//markerImgl=["images/martha.jpg","images/team.jpg"]
+    for(var i in data.locamartha.jpgtions)
     {
       count+=1
       var latlng = data.locations[i];
@@ -145,11 +145,23 @@ markerImgl=["images/martha.jpg","images/team.jpg"]
       var marker_latlng = new google.maps.LatLng(lat, lng);
       var marker = new google.maps.Marker({
         position: marker_latlng,
-      var markerImg=markerImgl[count-1]  
+      //var markerImg=markerImgl[count-1]  
         icon: markerImg,
         map: map
       });
+// binds the showing of infowindow with click event.
 
+      google.maps.event.addListener(marker, 'click', viewLocPic);
+    }
+
+    // 'this' in the function refers to the marker itself.
+    function viewLocPic()
+    {
+      console.log("this refers to " + this);
+      globalInfoWindow.setPosition(this.getPosition());
+      globalInfoWindow.setContent("<img src='images/martha.jpg'/>");
+      globalInfoWindow.open(map, this);
+    }
     </script>
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5jgw5Jza7pNam0BIMFydX2wl_LtWC89k&callback=initMap">
