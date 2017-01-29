@@ -131,7 +131,24 @@ var infowindow2 = new google.maps.InfoWindow({
     </script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
    
+//own marker clusters
+data.locations=[[-30.33,150.77],[-29,149.56]]
+markerImgl=["images/martha.jpg","images/team.jpg"]
+    for(var i in data.locations)
+    {
+      count+=1
+      var latlng = data.locations[i];
 
+      var lat = Number(latlng[0]);
+      var lng = Number(latlng[1]);
+
+      var marker_latlng = new google.maps.LatLng(lat, lng);
+      var marker = new google.maps.Marker({
+        position: marker_latlng,
+      var markerImg=markerImgl[count-1]  
+        icon: markerImg,
+        map: map
+      });
 
     </script>
     <script async defer
