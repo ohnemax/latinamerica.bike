@@ -28,14 +28,6 @@ function initMap() {
     title: 'Hello World!'
   });
   
-  //does not work
-  
-  var image = 'images/team.jpg';
-  var beachMarker = new google.maps.Marker({
-    position: {lat: -33.890, lng: 151.274},
-    map: map,
-    icon: image
-  });
 
 
 //add infobox to marker
@@ -74,7 +66,20 @@ var infowindow = new google.maps.InfoWindow({
     infowindow.open(map, marker);
   });
 
+//marker2
+var infowindow2 = new google.maps.InfoWindow({
+   // content: contentString
+    content: '<IMG BORDER="0" ALIGN="Left" SRC="images/martha.jpg"> '
+  });
 
+  var marker2 = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Uluru (Ayers Rock)'
+  });
+  marker.addListener('click', function() {
+    infowindow.open(map, marker2);
+  });
 
 }
 
