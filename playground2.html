@@ -130,37 +130,27 @@ var infowindow2 = new google.maps.InfoWindow({
 
    
 //own marker clusters
-data.locations=[[-30.33,150.77],[-29,149.56]]
-//markerImgl=["images/martha.jpg","images/team.jpg"]
-    for(var i in data.locamartha.jpgtions)
-    {
-      count+=1
-      var latlng = data.locations[i];
+locations=[["images/martha.jpg",-30.33,145.77],["images/team.jpg",-29,145.56]]
+var gmarkers = [];
+    for (var i = 0; i < locations.length; i++) {
+            var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+            map: map
+            });
 
-      var lat = Number(latlng[0]);
-      var lng = Number(latlng[1]);
+       google.maps.event.addListener(marker, 'mouseover', (function (marker, i) {
+            return function () {
+            infowindow.setContent(locations[i][0]);
+            infowindow.open(map, marker);
+            }
+        })(marker, i)); 
 
-      var marker_latlng = new google.maps.LatLng(lat, lng);
-      var marker = new google.maps.Marker({
-        position: marker_latlng,
-      //var markerImg=markerImgl[count-1]  
-        icon: markerImg,
-        map: map
-      });
-// binds the showing of infowindow with click event.
+gmarkers.push(marker);
+}   
 
-      google.maps.event.addListener(marker, 'click', viewLocPic);
-    }
+var markerCluster = new MarkerClusterer(map, gmarkers);
 
-    // 'this' in the function refers to the marker itself.
-    function viewLocPic()
-    {
-      console.log("this refers to " + this);
-      globalInfoWindow.setPosition(this.getPosition());
-      globalInfoWindow.setContent("<img src='images/martha.jpg'/>");
-      globalInfoWindow.open(map, this);
-    }
-    
+
        </script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
  
