@@ -73,11 +73,11 @@ var infowindow2 = new google.maps.InfoWindow({
   });
 
   var marker2 = new google.maps.Marker({
-    position: myLatLng,
+    position: {lat: -24.363, lng: 132.044},
     map: map,
-    title: 'Uluru (Ayers Rock)'
+    title: 'Uluru2 (Ayers Rock)'
   });
-  marker.addListener('click', function() {
+  marker2.addListener('click', function() {
     infowindow2.open(map, marker2);
   });
 
