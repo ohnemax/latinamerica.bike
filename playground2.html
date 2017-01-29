@@ -85,6 +85,14 @@ var infowindow2 = new google.maps.InfoWindow({
 //markerclustering
      // Create an array of alphabetical characters used to label the markers.
         var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var piclabel='abcdefghijklmnoprstuvwxyz'
+
+   
+ var infowindowi = new google.maps.InfoWindow({
+   // content: contentString
+    content: '<IMG BORDER="0" ALIGN="Left" SRC="piclabel[i % piclabel.length]"> '
+  });
+
 
         // Add some markers to the map.
         // Note: The code uses the JavaScript Array.prototype.map() method to
@@ -96,6 +104,12 @@ var infowindow2 = new google.maps.InfoWindow({
             label: labels[i % labels.length]
           });
         });
+     
+ markers.addListener('click', function() {
+    infowindowi.open(map, markers);
+  });
+       
+        
 
         // Add a marker clusterer to manage the markers.
         var markerCluster = new MarkerClusterer(map, markers,
