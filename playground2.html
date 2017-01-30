@@ -141,8 +141,8 @@ var gmarkers = [];
             map: map
             });
             
-            gmarkers.addListener('click', function() {
-    infowindow2.open(map, gmarkers);
+            marker.addListener('click', function() {
+    infowindow.open(map, marker);
   });
 
 
@@ -159,6 +159,9 @@ gmarkers.push(marker);
 var markerCluster = new MarkerClusterer(map, gmarkers);
 
 
+       </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+ 
     
     </script>
     <script async defer
