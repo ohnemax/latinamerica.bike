@@ -539,7 +539,7 @@ for key in lez:
     row_ez+= "Etappendistanz: {:.2f}  \n".format(ezdist)
     row_ez+= "Etappenzeit: {:.2f}  \n".format(eztime)
     row_ez+= "Etappendurchschnittsgeschwindigkeit: {:.2f}  \n\n".format(ezakmh)
-    row_ez+= "<iframe width='480' height='360' src='http://cg.kit.net/maps_s3/?v=embed&cg.{:.0f}.gpx' frameborder='0' allowfullscreen></iframe>\n".format(lez[key][3])
+    row_ez+= "<iframe width='480' height='360' src='http://track.kit.net/maps_s3/?v=embed&cg.{:.0f}.gpx' frameborder='0' allowfullscreen></iframe>\n".format(lez[key][3])
    
     
     #print(row_ez)
@@ -555,7 +555,7 @@ for key in lez:
     row_ez_en+= "distance: {:.2f}  \n".format(ezdist)
     row_ez_en+= "time: {:.2f}  \n".format(eztime)
     row_ez_en+= "average speed: {:.2f}  \n\n".format(ezakmh)
-    row_ez_en+= "<iframe width='480' height='360' src='http://cg.kit.net/maps_s3/?v=embed&cg.{:.0f}.gpx' frameborder='0' allowfullscreen></iframe>\n".format(lez[key][3])
+    row_ez_en+= "<iframe width='480' height='360' src='http://track.kit.net/maps_s3/?v=embed&cg.{:.0f}.gpx' frameborder='0' allowfullscreen></iframe>\n".format(lez[key][3])
    
     
     #print(row_ez_en)
