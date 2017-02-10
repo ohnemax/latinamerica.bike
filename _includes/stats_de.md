@@ -1,14 +1,14 @@
-**letztes Update: 19/12/2016**
+**letztes Update: 09/02/2017**
 
 ## Gesamtstatistiken
 
-Gesamt km (getrackt): 3193.08  
-Gesamt Tage auf dem Rad: 43  
+Gesamt km (getrackt): 5438.91  
+Gesamt Tage auf dem Rad: 76  
 km ohne Platten: bisher alle!  
-Anzahl angebotener Lifts: 3
+Anzahl angebotener Lifts: 4
 
 |  | Max | Tag | Min | Tag |  
 | --- |---:| :---:| ---:| :---:|   
-| Distanz | 119.26 | [39](http://www.latinamerica.bike/track/d39) |23.18|[22](http://www.latinamerica.bike/track/d22) |
-| durchschnittliche km/h  | 50.93|[43](http://www.latinamerica.bike/track/d43) |9.91|[30](http://www.latinamerica.bike/track/d30) |
-| max km/h  | 31.73|[41](http://www.latinamerica.bike/track/d41) |0.00|[43](http://www.latinamerica.bike/track/d43) |
+| Distanz | 119.26 | [39](http://www.latinamerica.bike/track/d39) |22.21|[64](http://www.latinamerica.bike/track/d64) |
+| durchschnittliche km/h  | 22.85|[35](http://www.latinamerica.bike/track/d35) |1.48|[43](http://www.latinamerica.bike/track/d43) |
+| max km/h  | 13317.91|[39](http://www.latinamerica.bike/track/d39) |3.54|[43](http://www.latinamerica.bike/track/d43) |

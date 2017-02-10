@@ -1,14 +1,14 @@
-**last update: 19/12/2016**
+**last update: 09/02/2017**
 
 ## overall statistics
 
-total km (tracked): 3193.08  
-days spent on the bike: 43  
+total km (tracked): 5438.91  
+days spent on the bike: 76  
 km without punctures: all!  
-free offered lifts: 3
+free offered lifts: 4
 
 |  | max | day | min | day |  
 | --- |---:| :---:| ---:| :---:|   
-| distance | 119.26 | [39](http://www.latinamerica.bike/track/d39en) |23.18|[22](http://www.latinamerica.bike/track/d22en) |
-| average km/h | 50.93|[43](http://www.latinamerica.bike/track/d43en) |9.91|[30](http://www.latinamerica.bike/track/d30en) |
-| max km/h  | 31.73|[41](http://www.latinamerica.bike/track/d41en) |0.00|[43](http://www.latinamerica.bike/track/d43en) |
+| distance | 119.26 | [39](http://www.latinamerica.bike/track/d39en) |22.21|[64](http://www.latinamerica.bike/track/d64en) |
+| average km/h | 22.85|[35](http://www.latinamerica.bike/track/d35en) |1.48|[43](http://www.latinamerica.bike/track/d43en) |
+| max km/h  | 13317.91|[39](http://www.latinamerica.bike/track/d39en) |3.54|[43](http://www.latinamerica.bike/track/d43en) |

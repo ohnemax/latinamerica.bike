@@ -13,29 +13,8 @@ chart: true
 
 ## Etappenziele
 
-1. Rundreise Uruguay:  
-   Tage 1-11
- 
-   <iframe width="480" height="360" src="http://track-kit.net/maps_s3/?v=embed&track=230879.gpx" frameborder="0" allowfullscreen></iframe> 
-  
-2. Bahia Blanca: 
-   Tage 12-20  
-  
-   <iframe width="480" height="360" src="http://track-kit.net/maps_s3/?v=embed&track=230881.gpx" frameborder="0" allowfullscreen></iframe>
-  
-3. Puerto Madryn:  
-   Tage 24-35
-   
-   <iframe width="480" height="360" src="http://track-kit.net/maps_s3/?v=embed&track=232100.gpx" frameborder="0" allowfullscreen></iframe>
-   
-4. Ushuaia:  
-   Tage 37-43
-   
-   <iframe width="480" height="360" src="http://track-kit.net/maps_s3/?v=embed&track=232845.gpx" frameborder="0" allowfullscreen></iframe>
-
-5. El Chaltén:
-
-
+{% capture my-include %} {% include ez_de.md%}{%endcapture%}
+{{my-include | markdownify}}
    
    
 {% capture my-include %} {% include days_de.md%}{%endcapture%}

@@ -32,7 +32,7 @@ for file in os.listdir(track_verzeichnis):
 
 l.sort()        
 #print(l)        
-l=l[:-1]
+#l=l[:-1]
 print(l)
 
 
@@ -141,8 +141,8 @@ for filename in l:
     row += "{:.2f} |".format(dist) 
     row += "{:.2f} |".format(akmh) 
     row += "{:.2f} |".format(maxkmh) 
-    row += "{:.2f} |".format(hoch)
-    row += "{:.2f} |".format(runter) 
+    row += "{:.2f} |".format(hoch*1000)
+    row += "{:.2f} |".format(runter*1000) 
     
     table+=row + "\n"
 
@@ -177,7 +177,7 @@ subtitle_de="\n## Radlertageinfos \n\n"
 subtitle_en="\n## information about cycling days \n\n"
 
 includes_verzeichnis=verzeichnis+"_includes/"
-fhn_de=includes_verzeichnis+"test-days_de.md"
+fhn_de=includes_verzeichnis+"days_de.md"
 
 f = open(fhn_de, "w")
 f.write(subtitle_de)
@@ -185,7 +185,7 @@ f.write(head_de)
 f.write(table.replace("LANG",""))
 f.close()
 
-fhn_en=includes_verzeichnis+"test-days_en.md"
+fhn_en=includes_verzeichnis+"days_en.md"
 
 f = open(fhn_en, "w")
 f.write(subtitle_en)
@@ -358,14 +358,14 @@ statistic_de="## Gesamtstatistiken\n\n"
 statistic_de+="Gesamt km (getrackt): {:.2f}  \n".format(gesamtdist)
 statistic_de+="Gesamt Tage auf dem Rad: {:.0f}  \n".format(gesamtday)
 statistic_de+= "km ohne Platten: bisher alle!  \n"
-statistic_de+= "Anzahl angebotener Lifts: 3\n\n"
+statistic_de+= "Anzahl angebotener Lifts: 4\n\n"
 
 statistic_en="## overall statistics\n\n"
 #statistic+=("%str"), gesamtdist
 statistic_en+="total km (tracked): {:.2f}  \n".format(gesamtdist) 
 statistic_en+="days spent on the bike: {:.0f}  \n".format(gesamtday)
 statistic_en+= "km without punctures: all!  \n"
-statistic_en+= "free offered lifts: 3\n\n"
+statistic_en+= "free offered lifts: 4\n\n"
 
 ##### 
 print(statistic_de)
@@ -388,7 +388,7 @@ update_en+="**\n\n"
 #####
 
 
-fhn_de=includes_verzeichnis+"test-stats_de.md"
+fhn_de=includes_verzeichnis+"stats_de.md"
 f = open(fhn_de, "w")
 f.write(update_de)
 f.write(statistic_de)
@@ -396,7 +396,7 @@ f.write(head_de)
 f.write(table_de.replace("LANG",""))
 f.close()
 
-fhn_en=includes_verzeichnis+"test-stats_en.md"
+fhn_en=includes_verzeichnis+"stats_en.md"
 f = open(fhn_en, "w")
 f.write(update_en)
 f.write(statistic_en)
@@ -483,6 +483,8 @@ lez[1] = (1, 11, "Rundreise Uruguay", 230879)
 lez[2] = (12, 20, "Bahia Blanca", 230881)
 lez[3] = (24, 35, "Puerto Madryn", 232100)
 lez[4] = (37, 43, "Ushuaia", 232845)
+lez[5] = (44, 53, "El Calten", 234072)
+lez[6] = (54, 76, "Puerto Montt/Carretera Austral", 235134)
 
 lrow_ez=[]
 lrow_ez_en=[]
@@ -523,13 +525,14 @@ for key in lez:
         
         
     ezakmh=ezdist/eztime
+    
     #print("dist,time,akmh")
     #print(ezdist)
     #print(eztime)
     #print(ezakmh)    
     
     
-    row_ez= "{:.0f}. Etappenziel: ".format(i)
+    row_ez= "{:.0f}. Etappenziel: ".format(key)
     row_ez+= lez[key][2]
     row_ez+= "\n\n"
     row_ez+= "Reisetage: {:.0f} - {:.0f}  \n".format(lvar1, lvar2)
@@ -545,7 +548,7 @@ for key in lez:
     
     ####write row for en
 
-    row_ez_en= "{:.0f}. interim goal: ".format(i)
+    row_ez_en= "{:.0f}. interim goal: ".format(key)
     row_ez_en+= lez[key][2]
     row_ez_en+= "\n\n"
     row_ez_en+= "travelling days: {:.0f} - {:.0f}  \n".format(lvar1, lvar2)
