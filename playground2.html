@@ -40,12 +40,17 @@ function initMap() {
         '<p>The Palace of Westminster is the meeting place of the House of Commons and the House of Lords, the two houses of the Parliament of the United Kingdom. Commonly known as the Houses of Parliament after its tenants.</p>' +
         '</div>']
     ];
-        
+    });
+
+
 //marker2
 var infowindow2 = new google.maps.InfoWindow({
    // content: contentString
     content: '<IMG BORDER="0" ALIGN="Left" SRC="images/martha.jpg"> '
-    var marker2 = new google.maps.Marker({
+  });
+
+  
+   var marker2 = new google.maps.Marker({
     position: {lat: -51.363, lng: 0.044},
     map: map,
     title: 'marthas pic'
@@ -54,9 +59,7 @@ var infowindow2 = new google.maps.InfoWindow({
     infowindow2.open(map, marker2);
   });
 
-});
-
-        
+       
         
         
     // Display multiple markers on a map
