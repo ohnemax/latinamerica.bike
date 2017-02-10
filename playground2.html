@@ -28,6 +28,7 @@ function initMap() {
         ['London Eye, London', 51.503454,0.119562],
         ['Palace of Westminster, London', 51.499633,0.124755]
     ];
+    
                         
     // Info Window Content
     var infoWindowContent = [
@@ -39,6 +40,24 @@ function initMap() {
         '<p>The Palace of Westminster is the meeting place of the House of Commons and the House of Lords, the two houses of the Parliament of the United Kingdom. Commonly known as the Houses of Parliament after its tenants.</p>' +
         '</div>']
     ];
+        
+//marker2
+var infowindow2 = new google.maps.InfoWindow({
+   // content: contentString
+    content: '<IMG BORDER="0" ALIGN="Left" SRC="images/martha.jpg"> '
+    var marker2 = new google.maps.Marker({
+    position: {lat: -51.363, lng: 0.044},
+    map: map,
+    title: 'marthas pic'
+  });
+  marker2.addListener('click', function() {
+    infowindow2.open(map, marker2);
+  });
+
+});
+
+        
+        
         
     // Display multiple markers on a map
     var infoWindow = new google.maps.InfoWindow(), marker, i;
@@ -62,14 +81,14 @@ function initMap() {
         })(marker, i));
 
         // Automatically center the map fitting all markers on the screen
-       // map.fitBounds(bounds);
+        map.fitBounds(bounds);
     }
 
     // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
-//    var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
-//        this.setZoom(14);
-        //google.maps.event.removeListener(boundsListener);
-//    });
+    var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
+        this.setZoom(14);
+        google.maps.event.removeListener(boundsListener);
+    });
     
 }
 
