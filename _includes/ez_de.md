@@ -5,7 +5,7 @@ Etappendistanz: 666.65
 Etappenzeit: 43.79  
 Etappendurchschnittsgeschwindigkeit: 15.22  
 
-<iframe width='480' height='360' src='http://track.kit.net/maps_s3/?v=embed&cg.230879.gpx' frameborder='0' allowfullscreen></iframe>
+<iframe width='480' height='360' src='http://track.kit.net/maps_s3/?v=embed&track.230879.gpx' frameborder='0' allowfullscreen></iframe>
 
 2. Etappenziel: Bahia Blanca
 
@@ -14,7 +14,7 @@ Etappendistanz: 834.93
 Etappenzeit: 47.80  
 Etappendurchschnittsgeschwindigkeit: 17.47  
 
-<iframe width='480' height='360' src='http://track.kit.net/maps_s3/?v=embed&cg.230881.gpx' frameborder='0' allowfullscreen></iframe>
+<iframe width='480' height='360' src='http://track.kit.net/maps_s3/?v=embed&track.230881.gpx' frameborder='0' allowfullscreen></iframe>
 
 3. Etappenziel: Puerto Madryn
 
@@ -23,7 +23,7 @@ Etappendistanz: 846.14
 Etappenzeit: 52.39  
 Etappendurchschnittsgeschwindigkeit: 16.15  
 
-<iframe width='480' height='360' src='http://track.kit.net/maps_s3/?v=embed&cg.232100.gpx' frameborder='0' allowfullscreen></iframe>
+<iframe width='480' height='360' src='http://track.kit.net/maps_s3/?v=embed&track.232100.gpx' frameborder='0' allowfullscreen></iframe>
 
 4. Etappenziel: Ushuaia
 
@@ -32,7 +32,7 @@ Etappendistanz: 602.24
 Etappenzeit: 36.24  
 Etappendurchschnittsgeschwindigkeit: 16.62  
 
-<iframe width='480' height='360' src='http://track.kit.net/maps_s3/?v=embed&cg.232845.gpx' frameborder='0' allowfullscreen></iframe>
+<iframe width='480' height='360' src='http://track.kit.net/maps_s3/?v=embed&track.232845.gpx' frameborder='0' allowfullscreen></iframe>
 
 5. Etappenziel: El Calten
 
@@ -41,7 +41,7 @@ Etappendistanz: 923.40
 Etappenzeit: 53.28  
 Etappendurchschnittsgeschwindigkeit: 17.33  
 
-<iframe width='480' height='360' src='http://track.kit.net/maps_s3/?v=embed&cg.234072.gpx' frameborder='0' allowfullscreen></iframe>
+<iframe width='480' height='360' src='http://track.kit.net/maps_s3/?v=embed&track.234072.gpx' frameborder='0' allowfullscreen></iframe>
 
 6. Etappenziel: Puerto Montt/Carretera Austral
 
@@ -50,5 +50,5 @@ Etappendistanz: 1315.19
 Etappenzeit: 109.89  
 Etappendurchschnittsgeschwindigkeit: 11.97  
 
-<iframe width='480' height='360' src='http://track.kit.net/maps_s3/?v=embed&cg.235134.gpx' frameborder='0' allowfullscreen></iframe>
+<iframe width='480' height='360' src='http://track.kit.net/maps_s3/?v=embed&track.235134.gpx' frameborder='0' allowfullscreen></iframe>
 
