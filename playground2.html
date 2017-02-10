@@ -18,7 +18,7 @@ function initMap() {
 // var myLatLng = {lat: -25.363, lng: 131.044};
 
   map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 35.397, lng: 0.644},
+    center: {lat: 50.397, lng: 0.644},
     zoom: 4
   });
  
@@ -62,14 +62,14 @@ function initMap() {
         })(marker, i));
 
         // Automatically center the map fitting all markers on the screen
-        map.fitBounds(bounds);
+       // map.fitBounds(bounds);
     }
 
     // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
-    var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
-        this.setZoom(14);
-        google.maps.event.removeListener(boundsListener);
-    });
+//    var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
+//        this.setZoom(14);
+        //google.maps.event.removeListener(boundsListener);
+//    });
     
 }
 
