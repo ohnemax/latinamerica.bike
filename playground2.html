@@ -10,6 +10,8 @@ include map
     <script type="text/javascript">
 
  var map;
+ var bounds = new google.maps.LatLngBounds(); 
+
 function initMap() {
  // var uluru = {lat: -26.363, lng: 130.044};
  
@@ -20,9 +22,7 @@ function initMap() {
     zoom: 4
   });
  
-
-
-
+ 
 // Multiple Markers
     var markers = [
         ['London Eye, London', 51.503454,0.119562],
