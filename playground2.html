@@ -9,154 +9,42 @@ include map
     <div id="map" style="height: 400px;width:600px;"></div>
     <script type="text/javascript">
 
-var map;
-function initMap() {
-  var uluru = {lat: -26.363, lng: 130.044};
- 
- var myLatLng = {lat: -25.363, lng: 131.044};
-
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -34.397, lng: 150.644},
-    zoom: 4
-  });
- 
- //has errors, no new world tag
- 
-  var marker = new google.maps.Marker({
-    position: myLatLng,
-    map: map,
-    title: 'Hello World!'
-  });
-  
-
-
-//add infobox to marker
- var contentString = '<div id="content">'+
-      '<div id="siteNotice">'+
-      '</div>'+
-      '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
-      '<div id="bodyContent">'+
-      '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-      'sandstone rock formation in the southern part of the '+
-      'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
-      'south west of the nearest large town, Alice Springs; 450&#160;km '+
-      '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
-      'features of the Uluru - Kata Tjuta National Park. Uluru is '+
-      'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
-      'Aboriginal people of the area. It has many springs, waterholes, '+
-      'rock caves and ancient paintings. Uluru is listed as a World '+
-      'Heritage Site.</p>'+
-      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-      '(last visited June 22, 2009).</p>'+
-      '</div>'+
-      '</div>';
-      
-var infowindow = new google.maps.InfoWindow({
-   // content: contentString
-    content: '<IMG BORDER="0" ALIGN="Left" SRC="images/team.jpg"> '
-  });
-
-  var marker = new google.maps.Marker({
-    position: uluru,
-    map: map,
-    title: 'Uluru (Ayers Rock)'
-  });
-  marker.addListener('click', function() {
-    infowindow.open(map, marker);
-  });
-
-//marker2
-var infowindow2 = new google.maps.InfoWindow({
-   // content: contentString
-    content: '<IMG BORDER="0" ALIGN="Left" SRC="images/martha.jpg"> '
-  });
-
-  var marker2 = new google.maps.Marker({
-    position: {lat: -24.363, lng: 132.044},
-    map: map,
-    title: 'Uluru2 (Ayers Rock)'
-  });
-  marker2.addListener('click', function() {
-    infowindow2.open(map, marker2);
-  });
-
-
-//markerclustering
-     // Create an array of alphabetical characters used to label the markers.
-        var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-
-        // Add some markers to the map.
-        // Note: The code uses the JavaScript Array.prototype.map() method to
-        // create an array of markers based on a given "locations" array.
-        // The map() method here has nothing to do with the Google Maps API.
-        var markers = locations.map(function(location, i) {
-          return new google.maps.Marker({
-            position: location,
-            label: labels[i % labels.length]
-          });
-        });
-
-        // Add a marker clusterer to manage the markers.
-        var markerCluster = new MarkerClusterer(map, markers,
-            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
-      }
-      var locations = [
-        {lat: -31.563910, lng: 147.154312},
-        {lat: -33.718234, lng: 150.363181},
-        {lat: -33.727111, lng: 150.371124},
-        {lat: -33.848588, lng: 151.209834},
-        {lat: -33.851702, lng: 151.216968},
-        {lat: -34.671264, lng: 150.863657},
-        {lat: -35.304724, lng: 148.662905},
-        {lat: -36.817685, lng: 175.699196},
-        {lat: -36.828611, lng: 175.790222},
-        {lat: -37.750000, lng: 145.116667},
-        {lat: -37.759859, lng: 145.128708},
-        {lat: -37.765015, lng: 145.133858},
-        {lat: -37.770104, lng: 145.143299},
-        {lat: -37.773700, lng: 145.145187},
-        {lat: -37.774785, lng: 145.137978},
-        {lat: -37.819616, lng: 144.968119},
-        {lat: -38.330766, lng: 144.695692},
-        {lat: -39.927193, lng: 175.053218},
-        {lat: -41.330162, lng: 174.865694},
-        {lat: -42.734358, lng: 147.439506},
-        {lat: -42.734358, lng: 147.501315},
-        {lat: -42.735258, lng: 147.438000},
-        {lat: -43.999792, lng: 170.463352}
-      ]
-
-
-       </script>
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
- 
    
-//own marker clusters
-locations=[['<IMG BORDER="0" ALIGN="Left" SRC="images/martha.jpg"> ',-30.33,145.77],['<IMG BORDER="0" ALIGN="Left" SRC="images/team.jpg"> ',-29,145.56]]
-var gmarkers = [];
-    for (var i = 0; i < locations.length; i++) {
-            var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-            map: map
-            });
-            
-            marker.addListener('click', function() {
-    infowindow.open(map, marker);
-  });
+clustertest 3   
+//cluster test 3    
+
+//to use a marker clusterer, create a MarkerClusterer object. In the simplest case, just pass a map to it.
+
+var center = new google.maps.LatLng(37.4419, -122.1419);
+var options = {
+  'zoom': 13,
+  'center': center,
+  'mapTypeId': google.maps.MapTypeId.ROADMAP
+};
+
+var map = new google.maps.Map(document.getElementById("map"), options);
+var mc = new MarkerClusterer(map);
 
 
-       google.maps.event.addListener(marker, 'mouseover', (function (marker, i) {
-            return function () {
-            infowindow.setContent(locations[i][0]);
-            infowindow.open(map, marker);
-            }
-        })(marker, i)); 
+//Once you create a marker cluster, you will want to add markers to it. MarkerClusterer supports adding markers using the addMarker() and addMarkers()method or by providing a array of markers to the constructor:
 
-gmarkers.push(marker);
-}   
+var center = new google.maps.LatLng(37.4419, -122.1419);
+var options = {
+  'zoom': 13,
+  'center': center,
+  'mapTypeId': google.maps.MapTypeId.ROADMAP
+};
 
-var markerCluster = new MarkerClusterer(map, gmarkers);
+var map = new google.maps.Map(document.getElementById("map"), options);
+
+var mcOptions = {gridSize: 50, maxZoom: 15};
+var markers = [
+
+[-30.33,145.77],
+[,-29,145.56]
+]; // Create the markers you want to add and collect them into a array.
+var mc = new MarkerClusterer(map, markers, mcOptions);
+
 
 
        </script>
