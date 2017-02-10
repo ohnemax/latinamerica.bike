@@ -6,28 +6,27 @@ ref: playground2
  
 include map
 
-<div id="map_wrapper"> <div id="map_canvas" class="mapping"></div> </div>
+  <div id="map" style="height: 400px;width:600px;"></div>
+    <script type="text/javascript">
 
- #map_wrapper { height: 400px; } #map_canvas { width: 100%; height: 100%; }
-
-
-jQuery(function($) { 
-
-// Asynchronously Load the map API 
-
-var script = document.createElement('script');
- script.src = "//maps.googleapis.com/maps/api/js?sensor=false&callback=initialize"; document.body.appendChild(script); }); 
- function initialize() { 
- var map; 
- var bounds = new google.maps.LatLngBounds(); var mapOptions = { mapTypeId: 'roadmap' }; 
+ var map;
+function initMap() {
+  var uluru = {lat: -26.363, lng: 130.044};
  
- // Display a map on the page 
- map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions); map.setTilt(45); 
+ var myLatLng = {lat: -25.363, lng: 131.044};
+
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: -34.397, lng: 150.644},
+    zoom: 4
+  });
+ 
+
+
 
 // Multiple Markers
     var markers = [
-        ['London Eye, London', 51.503454,-0.119562],
-        ['Palace of Westminster, London', 51.499633,-0.124755]
+        ['London Eye, London', -51.503454,130.119562],
+        ['Palace of Westminster, London', -51.499633,129.124755]
     ];
                         
     // Info Window Content
