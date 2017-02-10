@@ -9,8 +9,18 @@ include map
     <div id="map" style="height: 400px;width:600px;"></div>
     <script type="text/javascript">
 
-   
-clustertest 3   
+var map;
+function initMap() {
+  var uluru = {lat: -26.363, lng: 130.044};
+ 
+ var myLatLng = {lat: -25.363, lng: 131.044};
+
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: -34.397, lng: 150.644},
+    zoom: 4
+  });
+ 
+
 //cluster test 3    
 
 //to use a marker clusterer, create a MarkerClusterer object. In the simplest case, just pass a map to it.
