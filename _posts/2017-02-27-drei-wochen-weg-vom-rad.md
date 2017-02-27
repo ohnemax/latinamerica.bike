@@ -27,16 +27,13 @@ Entspannt verließen wir die Insel und fuhren gen Norden in die Seenregion. Zun�
 
 Luxuriös hatten wir ein Ferienzelt ("Domo") mit Thermalbadzugang gebucht. Aus unerklärlichen Gründen war der Domo bei Ankunft nicht verfügbar, aber wir durften in einer "normalen" Ferienwohnung schlafen. Diese hatte nicht nur Küche, Bad und viele Zimmer, sondern dazu noch eine große Holzwanne mit Termalwasser auf der Veranda. Wir tauften die Wanne "Topf". Dank dieser glücklichen Fügung konnten wir vor dem Abendessen gemütlich im warmen Wasser sitzen ("garen") und Wein genießen. Das Termalbad erschien plötzlich weniger spannend. Wir besuchten das Schwimmbecken dennoch am nächsten Tag, bevor wir zu Wasserfällen weiterfuhren.
 
-![Vulkan Osorno]({{ site.url}}/images/february/DSCF3637_small.JPG)  
-*Vulkan Osorno*
-
 ![Außenbecken des Termalbades]({{ site.url}}/images/february/P1040194_small.JPG)  
 *Außenbecken des Termalbades*
 
 Während wir zu ein Wasserfall wanderten, begann gleichzeitig soviel Wasser vom Himmel zu fallen, dass wir uns schnell wieder ins Auto verkrochen. Die starke Bewölkung und ab und Regen verfolgte uns leider die nächsten Tage, mehr Vulkane konnten wir nicht mehr sehen. Wir fuhren bis nach Pucon. Statt auf den Vulkan dort hinaufzuklettern sind wir ein bischen hineingestiegen - in eine Lavahöhle am Hang des Berges. Auch hier boten sich atemberaubende Anblicke, so etwa "Kuhscheiße" und die Nutellakammer.
 
 ![Lavahöhle]({{ site.url}}/images/february/P1040213_small.JPG)  
-*Lavalhöhle*
+*Lavahöhle*
 
 Von Pucon ging es wieder zurück nach Süden, das Auto musste am nächsten Tag abgegeben werden, und Moritz Mama und ihre Freundin flogen zurück nach Santiago. Wir kehrten zurück zu unseren Rädern nach Puerto Montt. Dank vieler Mitbringsel konnten wir nun neue Teile an die Fahrräder montieren und Martha konnte in einem neuen Schlafsack schlafen. Er ist warm, das ist bestätigt. Frau schwitzt.
 
