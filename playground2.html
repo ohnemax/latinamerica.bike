@@ -290,8 +290,10 @@ google.maps.event.addListener(marker, 'click', function () {
         markers.push(marker);  //push individual marker onto global array
         }
 
+var mcOptions = {gridSize: 50, maxZoom: 15};
 
-var markerCluster = new MarkerClusterer(map, markers, {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+
+var markerCluster = new MarkerClusterer(map, markers, mcOptions, {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
 
 };
 
@@ -327,7 +329,7 @@ var markerCluster = new MarkerClusterer(map, markers, {imagePath: 'https://devel
   <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
   </script>
   
-  <!-- mit key -->
+  <!-- mit key für latinamerica.bike-->
   <script async defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBGUbzd2qRVASxEj8HhTZYcCl3dbM37l0&callback=initMap">
   </script>
