@@ -4,7 +4,7 @@ lang: de
 ref: playground2
 ---
  
-include map
+//include map
 
     <div id="map" style="height: 400px;width:600px;"></div>
     <script type="text/javascript">
@@ -298,16 +298,16 @@ var markerCluster = new MarkerClusterer(map, markers, {imagePath: 'https://devel
 
     
   
-function AutoCenter() { 
+//function AutoCenter() { 
 //  Create a new viewpoint bound 
-var bounds = new google.maps.LatLngBounds(); 
+//var bounds = new google.maps.LatLngBounds(); 
 //  Go through each... 
-$.each(markers, function (index, marker) { 
-bounds.extend(marker.position); 
-}); 
+//$.each(markers, function (index, marker) { 
+//bounds.extend(marker.position); 
+//}); 
 //  Fit these bounds to the map 
-map.fitBounds(bounds); 
-}
+//map.fitBounds(bounds); 
+//}
   
   
   
@@ -327,13 +327,14 @@ map.fitBounds(bounds);
   <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
   </script>
   
-  //mit key
+  <!--mit key
   //<script async defer
    // src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5jgw5Jza7pNam0BIMFydX2wl_LtWC89k&callback=initMap">
   //</script>
   
-  
-  //ohne key
+  -->
+ <!-- //ohne key
+ -->
   <script async defer
    src="https://maps.googleapis.com/maps/api/js?callback=initMap">
   </script>
