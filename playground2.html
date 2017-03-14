@@ -1,52 +1,340 @@
----
+----
 layout: page
 lang: de
 ref: playground2
 ---
-     
  
-  <div id="map"></div>
+include map
+
+    <div id="map" style="height: 400px;width:600px;"></div>
+    <script type="text/javascript">
+
+var map;
+
+
+function initMap() {
+var location = [
+
+    ['DSCF2844.JPG', -51.621909000000002, -69.259648999999996, 'images/plants/small/gps/DSCF2844.JPG', ['Cerastium']],
+    ['DSCF2849.JPG', -51.621709000000003, -69.259448999999989, 'images/plants/small/gps/DSCF2849.JPG', ['Cerastium']],
+    ['DSCF2851.JPG', -51.621509000000003, -69.259248999999983, 'images/plants/small/gps/DSCF2851.JPG', ['Erodium?']],
+    ['DSCF2854.JPG', -51.621309000000004, -69.259048999999976, 'images/plants/small/gps/DSCF2854.JPG', ['Acaena magellanica', 'Acaena']],
+    ['DSCF2855.JPG', -51.621109000000004, -69.258848999999969, 'images/plants/small/gps/DSCF2855.JPG', ['Acaena magellanica', 'Acaena']],
+    ['DSCF2871.JPG', -52.256990000000002, -69.441976999999994, 'images/plants/small/gps/DSCF2871.JPG', ['Calceolaria']],
+    ['DSCF2874.JPG', -52.256790000000002, -69.441776999999988, 'images/plants/small/gps/DSCF2874.JPG', ['Arjona patagonica']],
+    ['DSCF3160.JPG', -54.740172000000001, -67.83256999999999, 'images/plants/small/gps/DSCF3160.JPG', ['no info yet']],
+    ['DSCF3161.JPG', -54.739972000000002, -67.832369999999983, 'images/plants/small/gps/DSCF3161.JPG', ['no info yet']],
+    ['DSCF3162.JPG', -54.740372000000001, -67.832769999999996, 'images/plants/small/gps/DSCF3162.JPG', ['no info yet']],
+    ['DSCF3518.JPG', -44.656047000000001, -72.41640100015627, 'images/plants/small/gps/DSCF3518.JPG', ['no info yet']],
+    ['P1020428.JPG', -34.548582000000003, -58.454594999999998, 'images/plants/small/gps/P1020428.JPG', ['no info yet']],
+    ['P1020430.JPG', -34.548782000000003, -58.454794999999997, 'images/plants/small/gps/P1020430.JPG', ['no info yet']],
+    ['P1020434.JPG', -33.73542397752982, -58.85639460994647, 'images/plants/small/gps/P1020434.JPG', ['Senecio inaequidens']],
+    ['P1020435.JPG', -33.735425227019036, -58.856392467986957, 'images/plants/small/gps/P1020435.JPG', ['Senecio inaequidens']],
+    ['P1020457.JPG', -33.244219226321874, -58.040996185108504, 'images/plants/small/gps/P1020457.JPG', ['Heliotropum']],
+    ['P1020459.JPG', -33.244246189330127, -58.040933412135537, 'images/plants/small/gps/P1020459.JPG', ['Verbascum virgata?']],
+    ['P1020460.JPG', -33.244245098695963, -58.040873428545019, 'images/plants/small/gps/P1020460.JPG', ['Verbascum virgata?']],
+    ['P1020461.JPG', -33.244169707376408, -58.04081042329986, 'images/plants/small/gps/P1020461.JPG', ['no info yet']],
+    ['P1020479.JPG', -34.469754179894181, -57.845068207654414, 'images/plants/small/gps/P1020479.JPG', ['no info yet']],
+    ['P1020480.JPG', -34.469753215061807, -57.845069775496071, 'images/plants/small/gps/P1020480.JPG', ['no info yet']],
+    ['P1020481.JPG', -34.469752443218582, -57.845071029776676, 'images/plants/small/gps/P1020481.JPG', ['no info yet']],
+    ['P1020491.JPG', -36.023911753590326, -59.091918470194329, 'images/plants/small/gps/P1020491.JPG', ['Tamarix cf. gallica']],
+    ['P1020503.JPG', -36.013500000000001, -59.092366666666663, 'images/plants/small/gps/P1020503.JPG', ['no info yet']],
+    ['P1020507.JPG', -36.023708333333332, -59.092266666666667, 'images/plants/small/gps/P1020507.JPG', ['carpobrotus']],
+    ['P1020508.JPG', -36.023908333333331, -59.092466666666667, 'images/plants/small/gps/P1020508.JPG', ['carpobrotus']],
+    ['P1020512.JPG', -36.023869444444443, -59.092491666666668, 'images/plants/small/gps/P1020512.JPG', ['nothoscordum']],
+    ['P1020520.JPG', -36.488340551097522, -59.029007349162299, 'images/plants/small/gps/P1020520.JPG', ['no info yet']],
+    ['P1020524.JPG', -36.668267490620174, -59.064095695695698, 'images/plants/small/gps/P1020524.JPG', ['no info yet']],
+    ['P1020542.JPG', -37.376066666666667, -59.122502777777775, 'images/plants/small/gps/P1020542.JPG', ['Glandularia']],
+    ['P1020543.JPG', -37.378986111111111, -59.11974166666667, 'images/plants/small/gps/P1020543.JPG', ['no info yet']],
+    ['P1020561.JPG', -38.203498745001895, -60.236110485015445, 'images/plants/small/gps/P1020561.JPG', ['no info yet']],
+    ['P1020572.JPG', -38.216304538565844, -60.238442281697758, 'images/plants/small/gps/P1020572.JPG', ['Glandularia']],
+    ['P1020573.JPG', -38.216304842316291, -60.238442155427968, 'images/plants/small/gps/P1020573.JPG', ['Glandularia']],
+    ['P1020594.JPG', -38.067419444444447, -61.975302777777777, 'images/plants/small/gps/P1020594.JPG', ['no info yet']],
+    ['P1020596.JPG', -38.067447222222221, -61.975352777777779, 'images/plants/small/gps/P1020596.JPG', ['no info yet']],
+    ['P1020598.JPG', -38.067411111111113, -61.975277777777777, 'images/plants/small/gps/P1020598.JPG', ['Glandularia']],
+    ['P1020599.JPG', -38.067402777777779, -61.975344444444445, 'images/plants/small/gps/P1020599.JPG', ['Discaria cf americana']],
+    ['P1020603.JPG', -38.067858333333334, -61.975549999999998, 'images/plants/small/gps/P1020603.JPG', ['Glandularia']],
+    ['P1020605.JPG', -38.06751388888889, -61.975519444444444, 'images/plants/small/gps/P1020605.JPG', ['Cerastium']],
+    ['P1020626.JPG', -40.328189942373491, -62.765194999999999, 'images/plants/small/gps/P1020626.JPG', ['no info yet']],
+    ['P1020628.JPG', -40.328202887255991, -62.765194999999999, 'images/plants/small/gps/P1020628.JPG', ['no info yet']],
+    ['P1020629.JPG', -40.328207656475371, -62.765194999999999, 'images/plants/small/gps/P1020629.JPG', ['no info yet']],
+    ['P1020633.JPG', -40.430981441180023, -62.788785307559749, 'images/plants/small/gps/P1020633.JPG', ['no info yet']],
+    ['P1020634.JPG', -40.430982448311767, -62.788785982989857, 'images/plants/small/gps/P1020634.JPG', ['no info yet']],
+    ['P1020635.JPG', -40.430983959091307, -62.788786996116244, 'images/plants/small/gps/P1020635.JPG', ['no info yet']],
+    ['P1020637.JPG', -40.430994635270395, -62.788794155427105, 'images/plants/small/gps/P1020637.JPG', ['no info yet']],
+    ['P1020644.JPG', -40.431030289465831, -62.788818064693579, 'images/plants/small/gps/P1020644.JPG', ['no info yet']],
+    ['P1020645.JPG', -40.431031699537847, -62.788819010257036, 'images/plants/small/gps/P1020645.JPG', ['no info yet']],
+    ['P1020647.JPG', -40.431032505314981, -62.788819550574516, 'images/plants/small/gps/P1020647.JPG', ['no info yet']],
+    ['P1020649.JPG', -40.497666113663435, -62.81050546417886, 'images/plants/small/gps/P1020649.JPG', ['no info yet']],
+    ['P1020650.JPG', -40.498001351843186, -62.81060761487629, 'images/plants/small/gps/P1020650.JPG', ['no info yet']],
+    ['P1020653.JPG', -40.498294088602854, -62.810684668732478, 'images/plants/small/gps/P1020653.JPG', ['no info yet']],
+    ['P1020655.JPG', -40.729703164160398, -62.887740536845136, 'images/plants/small/gps/P1020655.JPG', ['Turnera sidoides']],
+    ['P1020659.JPG', -40.730860980348204, -62.889251059517228, 'images/plants/small/gps/P1020659.JPG', ['Turnera sidoides']],
+    ['P1020717.JPG', -40.968105823582171, -64.13858101616367, 'images/plants/small/gps/P1020717.JPG', ['Hoffmannseggia trifoliata']],
+    ['P1020718.JPG', -40.968101135265698, -64.138586027826776, 'images/plants/small/gps/P1020718.JPG', ['Hoffmannseggia trifoliata']],
+    ['P1020720.JPG', -40.968091758646061, -64.138596051108891, 'images/plants/small/gps/P1020720.JPG', ['Hoffmannseggia trifoliata']],
+    ['P1020724.JPG', -40.9000091665281, -64.465924999999999, 'images/plants/small/gps/P1020724.JPG', ['Oenothera']],
+    ['P1020726.JPG', -40.900005465582602, -64.465928416383548, 'images/plants/small/gps/P1020726.JPG', ['Adesmia']],
+    ['P1020727.JPG', -40.799171678121418, -65.100839533200443, 'images/plants/small/gps/P1020727.JPG', ['no info yet']],
+    ['P1020728.JPG', -40.799169199890876, -65.100842290117583, 'images/plants/small/gps/P1020728.JPG', ['no info yet']],
+    ['P1020730.JPG', -40.79916699696129, -65.100844740711906, 'images/plants/small/gps/P1020730.JPG', ['no info yet']],
+    ['P1020732.JPG', -40.79915956274646, -65.100853011455484, 'images/plants/small/gps/P1020732.JPG', ['Thymophylla pentachaeta?']],
+    ['P1020733.JPG', -40.799157910628018, -65.100854849401927, 'images/plants/small/gps/P1020733.JPG', ['Thymophylla pentachaeta?']],
+    ['P1020736.JPG', -40.79915157750343, -65.100861894857417, 'images/plants/small/gps/P1020736.JPG', ['Thymophylla pentachaeta?']],
+    ['P1020741.JPG', -41.096747999999998, -65.389646999999997, 'images/plants/small/gps/P1020741.JPG', ['Erodium?']],
+    ['P1020742.JPG', -41.096947999999998, -65.389847000000003, 'images/plants/small/gps/P1020742.JPG', ['Erodium?']],
+    ['P1020743.JPG', -41.095948, -65.38884699999997, 'images/plants/small/gps/P1020743.JPG', ['no info yet']],
+    ['P1020744.JPG', -41.096147999999999, -65.389046999999977, 'images/plants/small/gps/P1020744.JPG', ['no info yet']],
+    ['P1020745.JPG', -41.096347999999999, -65.389246999999983, 'images/plants/small/gps/P1020745.JPG', ['Ephedra']],
+    ['P1020746.JPG', -41.096547999999999, -65.38944699999999, 'images/plants/small/gps/P1020746.JPG', ['Ephedra']],
+    ['P1020767.JPG', -42.64505250475306, -64.9690077086656, 'images/plants/small/gps/P1020767.JPG', ['Chuquiraga avellanedae']],
+    ['P1020771.JPG', -42.644964705248412, -64.968971718763683, 'images/plants/small/gps/P1020771.JPG', ['Suaeda divaricata']],
+    ['P1020772.JPG', -42.644947672143978, -64.968968850057905, 'images/plants/small/gps/P1020772.JPG', ['Suaeda divaricata']],
+    ['P1020774.JPG', -42.64487813906657, -64.968959113905299, 'images/plants/small/gps/P1020774.JPG', ['Atriplex lampa']],
+    ['P1020776.JPG', -42.644826052084113, -64.96895390522252, 'images/plants/small/gps/P1020776.JPG', ['Cyclolepis genistoides']],
+    ['P1020777.JPG', -42.644799276421068, -64.968949532326036, 'images/plants/small/gps/P1020777.JPG', ['Cyclolepis genistoides']],
+    ['P1020781.JPG', -42.644676932513356, -64.968923505600955, 'images/plants/small/gps/P1020781.JPG', ['no info yet']],
+    ['P1020786.JPG', -42.644105896787053, -64.968684230924254, 'images/plants/small/gps/P1020786.JPG', ['Prosopis alpataco']],
+    ['P1020789.JPG', -42.643815565565568, -64.968801056968829, 'images/plants/small/gps/P1020789.JPG', ['no info yet']],
+    ['P1020791.JPG', -42.643776570688338, -64.96877689704003, 'images/plants/small/gps/P1020791.JPG', ['Adesmia']],
+    ['P1020794.JPG', -42.643485247085529, -64.96854222137695, 'images/plants/small/gps/P1020794.JPG', ['Acantholippia seriphioides']],
+    ['P1020796.JPG', -42.643469567404424, -64.9684817624521, 'images/plants/small/gps/P1020796.JPG', ['Acantholippia seriphioides']],
+    ['P1020937.JPG', -52.277337422959505, -69.47042965373069, 'images/plants/small/gps/P1020937.JPG', ['Viola maculata']],
+    ['P1020942.JPG', -52.277355242887488, -69.470445796493792, 'images/plants/small/gps/P1020942.JPG', ['no info yet']],
+    ['P1020946.JPG', -52.336747733333333, -69.487198675948676, 'images/plants/small/gps/P1020946.JPG', ['Lepidophyllum cupressiforme?']],
+    ['P1020947.JPG', -52.336750107775735, -69.487200111684629, 'images/plants/small/gps/P1020947.JPG', ['Lepidophyllum cupressiforme?']],
+    ['P1020948.JPG', -52.336751954571191, -69.487201228347487, 'images/plants/small/gps/P1020948.JPG', ['Lepidophyllum cupressiforme?']],
+    ['P1020956.JPG', -52.834461111111111, -69.415302777777782, 'images/plants/small/gps/P1020956.JPG', ['Berberis']],
+    ['P1020964.JPG', -52.834433333333337, -69.415202777777779, 'images/plants/small/gps/P1020964.JPG', ['Olsynium biflorum']],
+    ['P1020966.JPG', -52.834580555555554, -69.415080555555562, 'images/plants/small/gps/P1020966.JPG', ['Armeria maritima']],
+    ['P1020967.JPG', -52.834391666666669, -69.415286111111115, 'images/plants/small/gps/P1020967.JPG', ['Oxalis enneaphylla']],
+    ['P1020971.JPG', -52.834272222222225, -69.415041666666653, 'images/plants/small/gps/P1020971.JPG', ['no info yet']],
+    ['P1020972.JPG', -52.834472222222225, -69.41524166666666, 'images/plants/small/gps/P1020972.JPG', ['no info yet']],
+    ['P1020973.JPG', -52.834452777777777, -69.415294444444442, 'images/plants/small/gps/P1020973.JPG', ['Hypochaeris incana']],
+    ['P1020977.JPG', -52.834041666666664, -69.415161111111118, 'images/plants/small/gps/P1020977.JPG', ['no info yet']],
+    ['P1020978.JPG', -52.834027777777777, -69.415183333333331, 'images/plants/small/gps/P1020978.JPG', ['Rumex acetosella', 'Rumex']],
+    ['P1020985.JPG', -52.994204639069096, -69.327801408953093, 'images/plants/small/gps/P1020985.JPG', ['Calceolaria uniflora', 'Calceolaria']],
+    ['P1020986.JPG', -52.994405216284989, -69.327915156038955, 'images/plants/small/gps/P1020986.JPG', ['Calceolaria uniflora', 'Calceolaria']],
+    ['P1030012.JPG', -54.681024999999998, -67.813863888888889, 'images/plants/small/gps/P1030012.JPG', ['Chiliotrichum']],
+    ['P1030014.JPG', -54.681224999999998, -67.814063888888896, 'images/plants/small/gps/P1030014.JPG', ['Chiliotrichum']],
+    ['P1030016.JPG', -54.681341666666668, -67.813961111111112, 'images/plants/small/gps/P1030016.JPG', ['Chiliotrichum']],
+    ['P1030045.JPG', -54.788716666666666, -68.397227777777772, 'images/plants/small/gps/P1030045.JPG', ['no info yet']],
+    ['P1030046.JPG', -54.788655555555557, -68.397155555555557, 'images/plants/small/gps/P1030046.JPG', ['no info yet']],
+    ['P1030047.JPG', -54.787730555555555, -68.396536111111118, 'images/plants/small/gps/P1030047.JPG', ['0']],
+    ['P1030048.JPG', -54.787702777777781, -68.396491666666662, 'images/plants/small/gps/P1030048.JPG', ['Hypochaeris incana var latifolius?', 'Leucheria?']],
+    ['P1030049.JPG', -54.787502777777782, -68.396291666666656, 'images/plants/small/gps/P1030049.JPG', ['Hypochaeris incana var latifolius?', 'Leucheria?']],
+    ['P1030051.JPG', -54.787805555555558, -68.395863888888883, 'images/plants/small/gps/P1030051.JPG', ['no info yet']],
+    ['P1030052.JPG', -54.788005555555557, -68.396063888888889, 'images/plants/small/gps/P1030052.JPG', ['no info yet']],
+    ['P1030054.JPG', -54.790266666666668, -68.390272222222222, 'images/plants/small/gps/P1030054.JPG', ['Armeria maritima']],
+    ['P1030055.JPG', -54.790466666666667, -68.390472222222229, 'images/plants/small/gps/P1030055.JPG', ['Armeria maritima']],
+    ['P1030056.JPG', -54.790066666666668, -68.390072222222216, 'images/plants/small/gps/P1030056.JPG', ['Armeria maritima']],
+    ['P1030058.JPG', -54.791041666666665, -68.389861111111117, 'images/plants/small/gps/P1030058.JPG', ['Nothofagus']],
+    ['P1030059.JPG', -54.791216666666664, -68.38955, 'images/plants/small/gps/P1030059.JPG', ['Cerastium']],
+    ['P1030061.JPG', -54.791016666666664, -68.389349999999993, 'images/plants/small/gps/P1030061.JPG', ['Cerastium']],
+    ['P1030077.JPG', -54.791427777777777, -68.37651944444444, 'images/plants/small/gps/P1030077.JPG', ['no info yet']],
+    ['P1030078.JPG', -54.791466666666665, -68.376549999999995, 'images/plants/small/gps/P1030078.JPG', ['no info yet']],
+    ['P1030079.JPG', -54.791227777777777, -68.376319444444434, 'images/plants/small/gps/P1030079.JPG', ['no info yet']],
+    ['P1030114.JPG', -54.857261111111114, -68.571683333333326, 'images/plants/small/gps/P1030114.JPG', ['Ranunculus peduncularis']],
+    ['P1030115.JPG', -54.857461111111114, -68.571883333333332, 'images/plants/small/gps/P1030115.JPG', ['Ranunculus peduncularis']],
+    ['P1030117.JPG', -54.857536111111109, -68.571155555555549, 'images/plants/small/gps/P1030117.JPG', ['Fern']],
+    ['P1030120.JPG', -54.857436111111113, -68.571399999999997, 'images/plants/small/gps/P1030120.JPG', ['Praria?', 'Pratia?']],
+    ['P1030122.JPG', -54.857594444444445, -68.571141666666662, 'images/plants/small/gps/P1030122.JPG', ['Anemona']],
+    ['P1030124.JPG', -54.857933333333335, -68.57064444444444, 'images/plants/small/gps/P1030124.JPG', ['Nothofagus']],
+    ['P1030125.JPG', -54.858102777777781, -68.569924999999998, 'images/plants/small/gps/P1030125.JPG', ['Codonorchis']],
+    ['P1030127.JPG', -54.857902777777781, -68.569724999999991, 'images/plants/small/gps/P1030127.JPG', ['Codonorchis']],
+    ['P1030132.JPG', -54.857780555555557, -68.569316666666666, 'images/plants/small/gps/P1030132.JPG', ['Chloraea?']],
+    ['P1030133.JPG', -54.857980555555557, -68.569516666666672, 'images/plants/small/gps/P1030133.JPG', ['Viola']],
+    ['P1030143.JPG', -54.859947222222225, -68.56216944444445, 'images/plants/small/gps/P1030143.JPG', ['Armeria maritima']],
+    ['P1030149.JPG', -54.86056388888889, -68.560433333333336, 'images/plants/small/gps/P1030149.JPG', ['no info yet']],
+    ['P1030151.JPG', -54.859213888888888, -68.563227777777783, 'images/plants/small/gps/P1030151.JPG', ['Viola']],
+    ['P1030161.JPG', -54.857255555555554, -68.571747222222228, 'images/plants/small/gps/P1030161.JPG', ['no info yet']],
+    ['P1030292.JPG', -54.947269444444444, -67.639869444444429, 'images/plants/small/gps/P1030292.JPG', ['no info yet']],
+    ['P1030293.JPG', -54.947694444444444, -67.640266666666662, 'images/plants/small/gps/P1030293.JPG', ['no info yet']],
+    ['P1030294.JPG', -54.947069444444445, -67.639669444444422, 'images/plants/small/gps/P1030294.JPG', ['Embothrium']],
+    ['P1030295.JPG', -54.947669444444443, -67.640269444444442, 'images/plants/small/gps/P1030295.JPG', ['Embothrium']],
+    ['P1030296.JPG', -54.947469444444444, -67.640069444444435, 'images/plants/small/gps/P1030296.JPG', ['Gaulteria']],
+    ['P1030297.JPG', -54.947830555555555, -67.640252777777775, 'images/plants/small/gps/P1030297.JPG', ['Gaulteria']],
+    ['P1030298.JPG', -54.947630555555556, -67.640052777777768, 'images/plants/small/gps/P1030298.JPG', ['Gaulteria']],
+    ['P1030362.JPG', -51.567322164074234, -72.618230145818274, 'images/plants/small/gps/P1030362.JPG', ['Escalonia', 'Escalonia rubra']],
+    ['P1030363.JPG', -51.567298232687762, -72.618198960445653, 'images/plants/small/gps/P1030363.JPG', ['Escalonia', 'Escalonia rubra']],
+    ['P1030364.JPG', -51.567256352750682, -72.618144386020816, 'images/plants/small/gps/P1030364.JPG', ['no info yet']],
+    ['P1030369.JPG', -51.566387484552294, -72.617655067113844, 'images/plants/small/gps/P1030369.JPG', ['Calceolaria']],
+    ['P1030376.JPG', -51.566178360140505, -72.617662314617661, 'images/plants/small/gps/P1030376.JPG', ['no info yet']],
+    ['P1030377.JPG', -51.56618236006333, -72.617673743029172, 'images/plants/small/gps/P1030377.JPG', ['no info yet']],
+    ['P1030391.JPG', -51.437494310746999, -72.756203028525135, 'images/plants/small/gps/P1030391.JPG', ['no info yet']],
+    ['P1030392.JPG', -51.437472246674488, -72.756242584745763, 'images/plants/small/gps/P1030392.JPG', ['no info yet']],
+    ['P1030394.JPG', -51.430904929577466, -72.776337104885059, 'images/plants/small/gps/P1030394.JPG', ['Fuchsia', 'Fuchsia magellanica']],
+    ['P1030395.JPG', -51.430901199212457, -72.776348177936654, 'images/plants/small/gps/P1030395.JPG', ['Fuchsia', 'Fuchsia magellanica']],
+    ['P1030411.JPG', -51.106619444444448, -72.98885277777778, 'images/plants/small/gps/P1030411.JPG', ['Chloraea', 'Chloraea magellanica']],
+    ['P1030412.JPG', -51.106419444444448, -72.988652777777773, 'images/plants/small/gps/P1030412.JPG', ['Chloraea', 'Chloraea magellanica']],
+    ['P1030668.JPG', -47.682825000000001, -73.025621000000001, 'images/plants/small/gps/P1030668.JPG', ['Gunnera', 'Gunnera chilensis']],
+    ['P1030669.JPG', -47.682625000000002, -73.025420999999994, 'images/plants/small/gps/P1030669.JPG', ['Gunnera', 'Gunnera chilensis']],
+    ['P1030673.JPG', -47.501138523042989, -72.826144960339306, 'images/plants/small/gps/P1030673.JPG', ['no info yet']],
+    ['P1030677.JPG', -47.501110911443355, -72.826064097836777, 'images/plants/small/gps/P1030677.JPG', ['no info yet']],
+    ['P1030679.JPG', -47.501099077904868, -72.826029442363705, 'images/plants/small/gps/P1030679.JPG', ['no info yet']],
+    ['P1030689.JPG', -47.452207759289081, -72.782927918196876, 'images/plants/small/gps/P1030689.JPG', ['Mutisia?']],
+    ['P1030690.JPG', -47.451849171246032, -72.78281223893066, 'images/plants/small/gps/P1030690.JPG', ['Mutisia?']],
+    ['P1030693.JPG', -47.451327588622668, -72.782643977757914, 'images/plants/small/gps/P1030693.JPG', ['Mutisia?']],
+    ['P1030699.JPG', -47.446216055140965, -72.783063012677104, 'images/plants/small/gps/P1030699.JPG', ['no info yet']],
+    ['P1030701.JPG', -47.446211853422881, -72.783064180820944, 'images/plants/small/gps/P1030701.JPG', ['no info yet']],
+    ['P1030703.JPG', -47.446204950217364, -72.783066099907742, 'images/plants/small/gps/P1030703.JPG', ['no info yet']],
+    ['P1030735.JPG', -47.152650000000001, -72.51199444444444, 'images/plants/small/gps/P1030735.JPG', ['Perezia pedicularifolia']],
+    ['P1030741.JPG', -47.151674999999997, -72.508569444444447, 'images/plants/small/gps/P1030741.JPG', ['Calceolaria']],
+    ['P1030742.JPG', -47.151474999999998, -72.50836944444444, 'images/plants/small/gps/P1030742.JPG', ['Calceolaria']],
+    ['P1030744.JPG', -47.151188888888889, -72.497083333333336, 'images/plants/small/gps/P1030744.JPG', ['no info yet']],
+    ['P1030754.JPG', -47.139616666666669, -72.458119444444435, 'images/plants/small/gps/P1030754.JPG', ['Collomia biflora?']],
+    ['P1030755.JPG', -47.139816666666668, -72.458319444444442, 'images/plants/small/gps/P1030755.JPG', ['Collomia biflora?']],
+    ['P1030759.JPG', -47.140016666666668, -72.458519444444448, 'images/plants/small/gps/P1030759.JPG', ['no info yet']],
+    ['P1030788.JPG', -46.691368173926769, -72.666633044243341, 'images/plants/small/gps/P1030788.JPG', ['Rosa?']],
+    ['P1030791.JPG', -46.691364293845496, -72.666626230661038, 'images/plants/small/gps/P1030791.JPG', ['Rosa?']],
+    ['P1030794.JPG', -46.691351544915079, -72.666603843311165, 'images/plants/small/gps/P1030794.JPG', ['no info yet']],
+    ['P1030795.JPG', -46.6913460018596, -72.666594109772419, 'images/plants/small/gps/P1030795.JPG', ['Lupinus']],
+    ['P1030797.JPG', -46.691336024411115, -72.666576589322773, 'images/plants/small/gps/P1030797.JPG', ['Lupinus']],
+    ['P1030798.JPG', -46.691333807154706, -72.666572695835214, 'images/plants/small/gps/P1030798.JPG', ['Lupinus']],
+    ['P1030800.JPG', -46.691321612530224, -72.666551281821555, 'images/plants/small/gps/P1030800.JPG', ['Trifolium']],
+    ['P1030801.JPG', -46.691318286720715, -72.666545441656027, 'images/plants/small/gps/P1030801.JPG', ['Trifolium']],
+    ['P1030807.JPG', -46.691254541977436, -72.666433504933508, 'images/plants/small/gps/P1030807.JPG', ['Fern']],
+    ['P1030809.JPG', -46.691237912789639, -72.666404303859906, 'images/plants/small/gps/P1030809.JPG', ['Lupinus']],
+    ['P1030810.JPG', -46.691236249873853, -72.666401384083045, 'images/plants/small/gps/P1030810.JPG', ['Lupinus']],
+    ['P1030811.JPG', -46.691229044052079, -72.666388730158729, 'images/plants/small/gps/P1030811.JPG', ['Lupinus']],
+    ['P1030918.JPG', -46.363761600559371, -72.757286586964497, 'images/plants/small/gps/P1030918.JPG', ['Lupinus']],
+    ['P1030927.JPG', -46.293080555555555, -72.804236111111109, 'images/plants/small/gps/P1030927.JPG', ['Lupinus']],
+    ['P1030931.JPG', -54.712730999999998, -68.060995000000005, 'images/plants/small/gps/P1030931.JPG', ['Quinchamalium chilense']],
+    ['P1030961.JPG', -45.346435252968931, -72.459625232661651, 'images/plants/small/gps/P1030961.JPG', ['no info yet']],
+    ['P1030962.JPG', -45.346408687305015, -72.459608402489621, 'images/plants/small/gps/P1030962.JPG', ['no info yet']],
+    ['P1030967.JPG', -45.344664907983166, -72.456760508308889, 'images/plants/small/gps/P1030967.JPG', ['no info yet']],
+    ['P1030971.JPG', -45.225245999999999, -72.219089999999994, 'images/plants/small/gps/P1030971.JPG', ['no info yet']],
+    ['P1030972.JPG', -45.225045999999999, -72.218889999999988, 'images/plants/small/gps/P1030972.JPG', ['no info yet']],
+    ['P1030973.JPG', -45.225269940384415, -72.219120652260429, 'images/plants/small/gps/P1030973.JPG', ['no info yet']],
+    ['P1030976.JPG', -45.013233358775096, -72.140696297106203, 'images/plants/small/gps/P1030976.JPG', ['no info yet']],
+    ['P1030977.JPG', -45.012964076858815, -72.140876585112906, 'images/plants/small/gps/P1030977.JPG', ['no info yet']],
+    ['P1030979.JPG', -45.012649914334666, -72.1410869210698, 'images/plants/small/gps/P1030979.JPG', ['no info yet']],
+    ['P1030981.JPG', -45.011931828801046, -72.141567689023702, 'images/plants/small/gps/P1030981.JPG', ['no info yet']],
+    ['P1030982.JPG', -44.686656743102716, -72.247842213114751, 'images/plants/small/gps/P1030982.JPG', ['no info yet']],
+    ['P1030983.JPG', -44.686526227184125, -72.247925228488754, 'images/plants/small/gps/P1030983.JPG', ['no info yet']],
+    ['P1030984.JPG', -44.686499423751897, -72.247933153050568, 'images/plants/small/gps/P1030984.JPG', ['no info yet']],
+    ['P1030991.JPG', -44.642982856862169, -72.441954493526282, 'images/plants/small/gps/P1030991.JPG', ['0']],
+    ['P1030999.JPG', -54.714959999999998, -68.071324999999987, 'images/plants/small/gps/P1030999.JPG', ['no info yet']],
+    ['P1040001.JPG', -54.715159999999997, -68.071524999999994, 'images/plants/small/gps/P1040001.JPG', ['no info yet']],
+    ['P1040009.JPG', -44.625312999999998, -72.450675999999987, 'images/plants/small/gps/P1040009.JPG', ['no info yet']],
+    ['P1040011.JPG', -44.625512999999998, -72.450875999999994, 'images/plants/small/gps/P1040011.JPG', ['no info yet']],
+    ['P1040015.JPG', -44.625112999999999, -72.450475999999981, 'images/plants/small/gps/P1040015.JPG', ['no info yet']],
+    ['P1040035.JPG', -43.165599210321432, -72.428536060040855, 'images/plants/small/gps/P1040035.JPG', ['no info yet']],
+    ['P1040036.JPG', -43.165594244479223, -72.428534641158663, 'images/plants/small/gps/P1040036.JPG', ['no info yet']],
+    ['P1040038.JPG', -43.165578726155836, -72.428530207394047, 'images/plants/small/gps/P1040038.JPG', ['no info yet']],
+    ['P1040039.JPG', -43.165499272651701, -72.428507506450856, 'images/plants/small/gps/P1040039.JPG', ['no info yet']],
+    ['P1040040.JPG', -43.165496169039479, -72.428506619712891, 'images/plants/small/gps/P1040040.JPG', ['no info yet']],
+    ['P1040041.JPG', -43.165492444684297, -72.42850555555556, 'images/plants/small/gps/P1040041.JPG', ['no info yet']],
+    ['P1040043.JPG', -43.165473201991311, -72.428500057690087, 'images/plants/small/gps/P1040043.JPG', ['no info yet']],
+    ['P1040047.JPG', -42.904029951203093, -72.717402323929363, 'images/plants/small/gps/P1040047.JPG', ['no info yet']],
+    ['P1040048.JPG', -42.90402598162072, -72.717398772745611, 'images/plants/small/gps/P1040048.JPG', ['no info yet']],
+    ['P1040050.JPG', -42.903395254580765, -72.718327300857325, 'images/plants/small/gps/P1040050.JPG', ['no info yet']],
+    ['P1040052.JPG', -42.903098072698064, -72.71876701548409, 'images/plants/small/gps/P1040052.JPG', ['no info yet']],
+    ];
+
+var center = new google.maps.LatLng(-43.4419, -70.1419);
+var options = {
+  'zoom': 4,
+  'center': center,
+  'mapTypeId': google.maps.MapTypeId.ROADMAP
+};
+
+var map = new google.maps.Map(document.getElementById("map"), options);
+
+       
+var markers = [];
+var infowindow = null
+     infowindow = new google.maps.InfoWindow({
+
+       //content: info
+           }); 
+           
+          
+for (var i = 0; i < location.length; i++) {
+    //var infocontent='The address name'+location[i][0];
+      
+    var plantinfo=''
+   // var imagealign = <IMG BORDER="0" ALIGN="Left" SRC=location[i][0]>
+    for (var p = 0; p < location[i][4].length; p++) {
+    //	var plantinfo =location[i][4][p]
+    	plantinfo = plantinfo+location[i][4][p]+', '
+      }
     
-      html, body, #map {
-     height: 100%;
-     width: 100%;
-     margin: 0px;
-     padding: 0px;
- }
-     
-     function initialize() {
-    
-        var location = [
-            ['1', -33.890542, 151.274856, 1],
-            ['2', -33.923036, 151.259052, 1],
-            ['3', -34.028249, 151.157507, 2],
-            ['4', -33.800101, 151.287478, 2],
-            ['5', -33.950198, 151.259302, 2]
-        ];
-    
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 10,
-            center: new google.maps.LatLng(-33.88, 151.28),
-            mapTypeId: google.maps.MapTypeId.ROADMAP
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(location[i][1], location[i][2]),
+            map: map,
+            title: location[i][0]+"text",
+           // info: imagealign+plantinfo
+            info: '<div style="width: 650px; height 450px"><IMG BORDER="0" ALIGN="Left" SRC="'+location[i][3]+'"></div>'+plantinfo
+            
+           // '<IMG BORDER="0" ALIGN="Left" SRC="images/team.jpg"> '
+            
+           // ##
+            /* now inside your initialise function */ 
+              
+            
         });
-    
-        var infowindow = new google.maps.InfoWindow();
-    
-        for (var i = 0; i < location.length; i++) {
-    
-            var marker = new google.maps.Marker({
-                position: new google.maps.LatLng(location[i][1], location[i][2]),
-                map: map,
-                title: location[i][0]
-            });
-    
-            google.maps.event.addListener(marker, 'click', (function (marker, i) {
-                return function () {
-                    infowindow.setContent(location[i][0]);
-                    infowindow.open(map, marker);
-                }
-            })(marker, i)); 
+console.log('<IMG BORDER="0" ALIGN="Left" SRC="'+location[i][3]+'">'+plantinfo
+            );
+
+google.maps.event.addListener(marker, 'click', function () { 
+            // where I have added .html to the marker object. 
+            infowindow.setContent(this.info); 
+            
+            //infowindow.setContent(infocontent); 
+            
+            infowindow.open(map, this); }); 
+          //  ##
+
+
+        markers.push(marker);  //push individual marker onto global array
         }
-    }
+
+
+var markerCluster = new MarkerClusterer(map, markers, {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+
+};
+
+
     
-    initialize();
+  
+function AutoCenter() { 
+//  Create a new viewpoint bound 
+var bounds = new google.maps.LatLngBounds(); 
+//  Go through each... 
+$.each(markers, function (index, marker) { 
+bounds.extend(marker.position); 
+}); 
+//  Fit these bounds to the map 
+map.fitBounds(bounds); 
+}
+  
+  
+  
+//  var mcOptions = {gridSize: 50, maxZoom: 15};
+//  var markers = [
+  //		[
+//  var mc = new MarkerClusterer(map, markers, mcOptions);
+    
+    
+    
+
+
+  </script>
+   
+  
+  
+  <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+  </script>
+  
+  //mit key
+  //<script async defer
+   // src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5jgw5Jza7pNam0BIMFydX2wl_LtWC89k&callback=initMap">
+  //</script>
+  
+  
+  //ohne key
+  <script async defer
+   src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+  </script>
+  
