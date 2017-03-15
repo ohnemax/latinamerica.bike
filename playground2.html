@@ -6,7 +6,9 @@ ref: playground2
  
 <!--include map
 -->
-    <div id="map" style="height: 400px;width:600px;"></div>
+    <!-- <div id="map" style="height: 600px;width:800px;"></div> -->
+    <div id="map" style="height: 100%;width:90%;"></div>
+    
     <script type="text/javascript">
 
 var map;
@@ -261,11 +263,10 @@ for (var i = 0; i < location.length; i++) {
         	plantinfo=taglist
         	}
         	 else if ( taglist.length===2){
-        	plantinfo= "<p> Gattung: " + taglist[0] +"</p>" + "<p> Art: " + taglist[1] +"</p>"
-        	}
+        	plantinfo= "<p> Gattung: " + taglist[1] +"</p>"+ " Art: " + taglist[0] }
         	
         	else if ( taglist.length===1){
-        	plantinfo= "<p> Gattung: " + taglist[0] +"<!p>" 
+        	plantinfo= "<p> plant information: " + taglist[0] +"</p>" 
         	}
         	
         	
@@ -333,13 +334,6 @@ var markerCluster = new MarkerClusterer(map, markers, mcOptions, {imagePath: 'ht
 //}
   
   
-  
-//  var mcOptions = {gridSize: 50, maxZoom: 15};
-//  var markers = [
-  //		[
-//  var mc = new MarkerClusterer(map, markers, mcOptions);
-    
-    
     
 
 
