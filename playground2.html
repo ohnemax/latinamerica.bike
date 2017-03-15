@@ -299,18 +299,24 @@ for (var i = 0; i < location.length; i++) {
 //console.log('<IMG BORDER="0" ALIGN="Left" SRC="'+location[i][3]+'">'+plantinfo
 //            );
 
-google.maps.event.addListener(marker, 'click', function () { 
-            // where I have added .html to the marker object. 
-            infowindow.setContent(this.info); 
-            
-            //infowindow.setContent(infocontent); 
-            
-            infowindow.open(map, this); }); 
-          //  ##
-
-
-        markers.push(marker);  //push individual marker onto global array
+        
+        
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+        // center on marker
+        map.setCenter(marker.getPosition());
+        // open the infowindow
+        infowindow.setContent(this.info);
+        infowindow.open(map, this);
         }
+        })(marker, i));
+        
+        markers.push(marker);  //push individual marker onto global array
+        
+        }
+
+
+
 
 var mcOptions = {gridSize: 50, maxZoom: 12};
 
