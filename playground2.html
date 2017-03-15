@@ -1,4 +1,4 @@
-----
+---
 layout: page
 lang: de
 ref: playground2
@@ -253,19 +253,40 @@ var infowindow = null
 for (var i = 0; i < location.length; i++) {
     //var infocontent='The address name'+location[i][0];
       
-    var plantinfo=''
+    var plantinfo='<p>'
    // var imagealign = <IMG BORDER="0" ALIGN="Left" SRC=location[i][0]>
-    for (var p = 0; p < location[i][4].length; p++) {
-    //	var plantinfo =location[i][4][p]
-    	plantinfo = plantinfo+location[i][4][p]+', '
-      }
+   // for (var p = 0; p < location[i][4].length; p++) {
+    taglist=location[i][4]
+   if (taglist[0]==="no info yet"){
+        	plantinfo=taglist
+        	}
+        	 else if ( taglist.length===2){
+        	plantinfo= "<p> Gattung: " + taglist[0] +"</p>" + "<p> Art: " + taglist[1] +"</p>"
+        	}
+        	
+        	else if ( taglist.length===1){
+        	plantinfo= "<p> Gattung: " + taglist[0] +"<!p>" 
+        	}
+        	
+        	
+  //}  
     
+    //	var plantinfo =location[i][4][p]
+    //	plantinfo = plantinfo+"<b>"+location[i][4][p]+"</b>"+', '
+      
+      
+    //  }
+  //  plantinfo = plantinfo.replace(/,\s*$/, ""); 
+ //   plantinfo="<p>"+plantinfo+"</p>"
+ 
         var marker = new google.maps.Marker({
             position: new google.maps.LatLng(location[i][1], location[i][2]),
             map: map,
             title: location[i][0],
            // info: imagealign+plantinfo
-            info: '<div style="width: 650px; height 450px"><IMG BORDER="0" ALIGN="Left" SRC=location[i][3]></div>'+plantinfo
+            info: '<div style="width: 650px; height 450px"><IMG BORDER="0" ALIGN="Left" SRC="'+location[i][3]+'"></div>'+plantinfo
+            //info: '<IMG BORDER="0" ALIGN="Left" SRC="'+location[i][3]+'"'+plantinfo
+            
             
            // '<IMG BORDER="0" ALIGN="Left" SRC="images/team.jpg"> '
             
@@ -290,7 +311,7 @@ google.maps.event.addListener(marker, 'click', function () {
         markers.push(marker);  //push individual marker onto global array
         }
 
-var mcOptions = {gridSize: 50, maxZoom: 15};
+var mcOptions = {gridSize: 50, maxZoom: 12};
 
 
 var markerCluster = new MarkerClusterer(map, markers, mcOptions, {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
@@ -334,7 +355,7 @@ var markerCluster = new MarkerClusterer(map, markers, mcOptions, {imagePath: 'ht
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBGUbzd2qRVASxEj8HhTZYcCl3dbM37l0&callback=initMap">
   </script>
   
-  -->
+ 
  <!-- //ohne key
  -->
 <!--  <script async defer
