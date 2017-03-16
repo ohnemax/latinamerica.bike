@@ -83,6 +83,9 @@ links:
     archive:
       title: Archive
       url: /archive-en
+    plantmap:
+      title: PlantMap
+      url: /plantmap
   de:
     home:
       title: Home
@@ -103,6 +106,9 @@ links:
     archive:
       title: Archiv
       url: /archive-de
+    plantmap:
+      title: Pflanzenkarte
+      url: /plantmap  
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Berlin
 future:      true
