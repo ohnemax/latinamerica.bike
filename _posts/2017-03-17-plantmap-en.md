@@ -1,6 +1,6 @@
 ---
 layout: post
-title:PlantMap
+title: PlantMap
 author: mardy
 modified: 2017-03-17
 category: Radgeschichten
