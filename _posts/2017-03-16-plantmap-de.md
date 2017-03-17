@@ -16,6 +16,6 @@ Endlich ist es soweit, meine ["Pflanzenkarte"](http://www.latinamerica.bike//pla
 
 Das Layout wird hoffentlich besser mit der Zeit, aber bevor die Karte nie online geht, lieber "work in progress"...
 
-Die Seite ist meine Lösung auf die ganzen Pflanzenfotos, die ich während unserer Reise aufgenommen habe und euch nicht vorenthalten möchte.
+Die Seite ist meine LÃ¶sung auf die ganzen Pflanzenfotos, die ich wÃ¤hrend unserer Reise aufgenommen habe und euch nicht vorenthalten mÃ¶chte.
 
-Viel Spass bei der Flora Südamerikas.
+Viel Spass bei der Flora SÃ¼damerikas.
