@@ -10,12 +10,12 @@ ref: plantmap
 archive: false
 comments: true
 featured: false
-
 ---
-Finally, my page made it online before we continue cycling: my ["plantmap"](http://www.latinamerica.bike//plantmap). 
 
-The layout still wants some improvement, but as it is work in progress it hopefully gets better.
+Finally, my programming skills made a new page for our blog:["my plantmap"]((http://www.latinamerica.bike//plantmap).
 
-This page represents a solution for all the plant pictures I take on the way. 
+The page represents work in progress and I hope to get the layout more convinient soon.
 
-Enjoy the Souh America Flora. 
+The page shows some of the plants I found on our way while cycling or hiking. 
+
+Enjoy the flora of South America.
