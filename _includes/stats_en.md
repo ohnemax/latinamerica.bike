@@ -4,7 +4,7 @@
 
 total km (tracked): 7120.72  
 days spent on the bike: 98  
-km without punctures: all!  
+km without punctures: 6591.57 
 free offered lifts: 7
 lifts taken: 5
 
