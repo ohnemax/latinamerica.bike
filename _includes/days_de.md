@@ -80,7 +80,7 @@
 |[76](http://www.latinamerica.bike/track/d76) |Caleta Puelche | Puerto Mont |46.38 |15.71 |39.69 |401.95 |356.61 |
 |[77](http://www.latinamerica.bike/track/d77) |La Serena | Service Area |87.80 |15.42 |49.04 |1211.82 |821.64 |
 |[78](http://www.latinamerica.bike/track/d78) |Punta Colorada | Ruta 5 |82.70 |13.97 |43.09 |1404.28 |985.98 |
-|[py](http://www.latinamerica.bike/track/dpy) |Ruta 5 | Service Station Ruta 5 |82.83 |21.46 |985.05 |394.34 |750.95 |
+|[79](http://www.latinamerica.bike/track/d79) |Ruta 5 | Service Station Ruta 5 |82.83 |21.46 |985.05 |394.34 |750.95 |
 |[80](http://www.latinamerica.bike/track/d80) |Service Station | Copiapo |89.58 |17.14 |52.31 |735.98 |833.95 |
 |[81](http://www.latinamerica.bike/track/d81) |Copiapo | Bahia Salads |88.33 |17.13 |33.59 |195.20 |574.68 |
 |[82](http://www.latinamerica.bike/track/d82) |Bahia Saladas | Bahia Inglesa |80.41 |15.18 |41.55 |546.13 |544.45 |
@@ -88,7 +88,7 @@
 |[84](http://www.latinamerica.bike/track/d84) |Playa Portofino | PN Pan de Azucar |58.04 |13.34 |36.40 |447.69 |447.84 |
 |[85](http://www.latinamerica.bike/track/d85) |PN Pan de Azucar | Posada Taltal |88.25 |13.84 |35.17 |1160.94 |378.63 |
 |[86](http://www.latinamerica.bike/track/d86) |Posada Taltal | Ruta 5 km 1160 |69.53 |12.10 |42.58 |1392.33 |228.22 |
-|[py](http://www.latinamerica.bike/track/dpy) |Ruina Britania | Posada |122.76 |15.98 |66.57 |466.67 |1133.77 |
+|[87](http://www.latinamerica.bike/track/d87) |Ruina Britania | Posada |122.76 |15.98 |66.57 |466.67 |1133.77 |
 |[88](http://www.latinamerica.bike/track/d88) |Posada | Antofagasta |92.65 |23.61 |40.55 |99.45 |1369.05 |
 |[89](http://www.latinamerica.bike/track/d89) |Antofagasta | Baquedano |76.33 |14.24 |28.49 |1066.51 |57.79 |
 |[90](http://www.latinamerica.bike/track/d90) |Baquedano | Wasserwerk |110.24 |15.24 |30.09 |996.20 |133.06 |
@@ -99,4 +99,4 @@
 |[95](http://www.latinamerica.bike/track/d95) |Socaire | Ruta CH23 km 237 |48.04 |7.36 |22.46 |1143.38 |355.04 |
 |[96](http://www.latinamerica.bike/track/d96) |km | Gendamerie |57.45 |9.54 |34.03 |818.20 |608.38 |
 |[97](http://www.latinamerica.bike/track/d97) |Gendamerie | Baustelle |72.32 |12.18 |41.13 |540.53 |782.22 |
-|[ad](http://www.latinamerica.bike/track/dad) |Olacapato Grande | Salsa |59.77 |10.75 |30.96 |654.17 |887.54 |
+|[98](http://www.latinamerica.bike/track/d98) |Olacapato Grande | San Antonio de los Cobres |59.77 |10.75 |30.96 |654.17 |887.54 |

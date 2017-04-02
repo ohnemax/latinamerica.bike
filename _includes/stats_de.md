@@ -5,11 +5,11 @@
 Gesamt km (getrackt): 7120.72  
 Gesamt Tage auf dem Rad: 98  
 km ohne Platten: bisher alle!  
-Anzahl angebotener Lifts: 7
-Anzahl angenommener Lifts: 5
+Anzahl angebotener Lifts: 7 
+Anzahl angenommener Lifts: 5 
 
 |  | Max | Tag | Min | Tag |  
 | --- |---:| :---:| ---:| :---:|   
-| Distanz | 122.76 | [py](http://www.latinamerica.bike/track/dpy) |22.21|[64](http://www.latinamerica.bike/track/d64) |
+| Distanz | 122.76 | [87](http://www.latinamerica.bike/track/d87) |22.21|[64](http://www.latinamerica.bike/track/d64) |
 | durchschnittliche km/h  | 23.61|[88](http://www.latinamerica.bike/track/d88) |1.48|[43](http://www.latinamerica.bike/track/d43) |
 | max km/h  | 13317.91|[39](http://www.latinamerica.bike/track/d39) |3.54|[43](http://www.latinamerica.bike/track/d43) |
