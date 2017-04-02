@@ -78,3 +78,25 @@
 |[74+](http://www.latinamerica.bike/track/d74) |* NP Pumalin Norte | Hornopiren |80.06 |15.84 |29.38 |147.60 |128.21 |
 |[75+](http://www.latinamerica.bike/track/d75) |* Hornopiren | Caleta Puelche |63.78 |12.56 |40.81 |733.61 |736.62 |
 |[76](http://www.latinamerica.bike/track/d76) |Caleta Puelche | Puerto Mont |46.38 |15.71 |39.69 |401.95 |356.61 |
+|[77](http://www.latinamerica.bike/track/d77) |La Serena | Service Area |87.80 |15.42 |49.04 |1211.82 |821.64 |
+|[78](http://www.latinamerica.bike/track/d78) |Punta Colorada | Ruta 5 |82.70 |13.97 |43.09 |1404.28 |985.98 |
+|[py](http://www.latinamerica.bike/track/dpy) |Ruta 5 | Service Station Ruta 5 |82.83 |21.46 |985.05 |394.34 |750.95 |
+|[80](http://www.latinamerica.bike/track/d80) |Service Station | Copiapo |89.58 |17.14 |52.31 |735.98 |833.95 |
+|[81](http://www.latinamerica.bike/track/d81) |Copiapo | Bahia Salads |88.33 |17.13 |33.59 |195.20 |574.68 |
+|[82](http://www.latinamerica.bike/track/d82) |Bahia Saladas | Bahia Inglesa |80.41 |15.18 |41.55 |546.13 |544.45 |
+|[83](http://www.latinamerica.bike/track/d83) |Bahia Inglesa | Playa Portofino |78.34 |15.53 |49.50 |606.26 |609.32 |
+|[84](http://www.latinamerica.bike/track/d84) |Playa Portofino | PN Pan de Azucar |58.04 |13.34 |36.40 |447.69 |447.84 |
+|[85](http://www.latinamerica.bike/track/d85) |PN Pan de Azucar | Posada Taltal |88.25 |13.84 |35.17 |1160.94 |378.63 |
+|[86](http://www.latinamerica.bike/track/d86) |Posada Taltal | Ruta 5 km 1160 |69.53 |12.10 |42.58 |1392.33 |228.22 |
+|[py](http://www.latinamerica.bike/track/dpy) |Ruina Britania | Posada |122.76 |15.98 |66.57 |466.67 |1133.77 |
+|[88](http://www.latinamerica.bike/track/d88) |Posada | Antofagasta |92.65 |23.61 |40.55 |99.45 |1369.05 |
+|[89](http://www.latinamerica.bike/track/d89) |Antofagasta | Baquedano |76.33 |14.24 |28.49 |1066.51 |57.79 |
+|[90](http://www.latinamerica.bike/track/d90) |Baquedano | Wasserwerk |110.24 |15.24 |30.09 |996.20 |133.06 |
+|[91](http://www.latinamerica.bike/track/d91) |Wasserwerk | Calama |47.98 |17.02 |24.38 |419.52 |26.79 |
+|[92](http://www.latinamerica.bike/track/d92) |Calama | Ruta 23 - Paso |63.16 |13.29 |23.99 |1153.12 |9.72 |
+|[93](http://www.latinamerica.bike/track/d93) |Ruta 23 | San Pedro de Atacama |35.83 |19.59 |46.34 |196.05 |1179.71 |
+|[94](http://www.latinamerica.bike/track/d94) |San Pedro de Atacama | Socaire |89.49 |13.55 |37.00 |1083.82 |266.35 |
+|[95](http://www.latinamerica.bike/track/d95) |Socaire | Ruta CH23 km 237 |48.04 |7.36 |22.46 |1143.38 |355.04 |
+|[96](http://www.latinamerica.bike/track/d96) |km | Gendamerie |57.45 |9.54 |34.03 |818.20 |608.38 |
+|[97](http://www.latinamerica.bike/track/d97) |Gendamerie | Baustelle |72.32 |12.18 |41.13 |540.53 |782.22 |
+|[ad](http://www.latinamerica.bike/track/dad) |Olacapato Grande | Salsa |59.77 |10.75 |30.96 |654.17 |887.54 |
