@@ -636,3 +636,14 @@ iframe {
     vertical-align: super;
     color: black;
 }
+
+.notepad-page-content iframe {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.notepad-page-content table {
+    margin-left: auto;
+    margin-right: auto;
+}
