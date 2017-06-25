@@ -4,12 +4,12 @@
 
 Gesamt km (getrackt): 8088.78  
 Gesamt Tage auf dem Rad: 117  
-Anzahl Reperaturen: 5 
-Anzahl Platten: 2 
-max km ohne Platten: 6591.57 
-min km ohne Platten: 1443.78 
-Anzahl angebotener Lifts: 7 
-Anzahl angenommener Lifts: 5 
+Anzahl Reparaturen: 5  
+  Anzahl Platten: 2  
+max km ohne Platten: 6591.57   
+min km ohne Platten: 1443.78   
+Anzahl angebotener Lifts: 7  
+Anzahl angenommener Lifts: 5  
 
 |  | Max | Tag | Min | Tag |  
 | --- |---:| :---:| ---:| :---:|   
