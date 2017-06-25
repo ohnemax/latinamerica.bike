@@ -1,10 +1,13 @@
-**letztes Update: 02/04/2017**
+**letztes Update: 25/06/2017**
 
 ## Gesamtstatistiken
 
-Gesamt km (getrackt): 7120.72  
-Gesamt Tage auf dem Rad: 98  
-km ohne Platten: 6591.57 
+Gesamt km (getrackt): 8088.78  
+Gesamt Tage auf dem Rad: 117  
+Anzahl Reperaturen: 5 
+Anzahl Platten: 2 
+max km ohne Platten: 6591.57 
+min km ohne Platten: 1443.78 
 Anzahl angebotener Lifts: 7 
 Anzahl angenommener Lifts: 5 
 

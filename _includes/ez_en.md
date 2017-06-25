@@ -70,3 +70,12 @@ average speed: 10.77
 
 <iframe width='480' height='360' src='http://track-kit.net/maps_s3/?v=embed&track.237072.gpx' frameborder='0' allowfullscreen></iframe>
 
+9. interim goal: letzte Runde
+
+travelling days: 99 - 117  
+distance: 968.06  
+time: 80.54  
+average speed: 12.02  
+
+<iframe width='480' height='360' src='http://track-kit.net/maps_s3/?v=embed&track.240255.gpx' frameborder='0' allowfullscreen></iframe>
+

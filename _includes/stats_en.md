@@ -1,10 +1,13 @@
-**last update: 02/04/2017**
+**last update: 25/06/2017**
 
 ## overall statistics
 
-total km (tracked): 7120.72  
-days spent on the bike: 98  
-km without punctures: 6591.57 
+total km (tracked): 8088.78  
+days spent on the bike: 117  
+repairs: 5 
+punctures: 2 
+max km without punctures: 6591.57 
+min km without punctures: 1443.78 
 free offered lifts: 7
 lifts taken: 5
 

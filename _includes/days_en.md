@@ -100,3 +100,22 @@
 |[96](http://www.latinamerica.bike/track/d96en) |km | Gendamerie |57.45 |9.54 |34.03 |818.20 |608.38 |
 |[97](http://www.latinamerica.bike/track/d97en) |Gendamerie | Baustelle |72.32 |12.18 |41.13 |540.53 |782.22 |
 |[98](http://www.latinamerica.bike/track/d98en) |Olacapato Grande | San Antonio de los Cobres |59.77 |10.75 |30.96 |654.17 |887.54 |
+|[99](http://www.latinamerica.bike/track/d99en) |Salta | La Caldera |28.68 |11.61 |30.93 |300.09 |78.14 |
+|[100](http://www.latinamerica.bike/track/d100en) |La Caldera | S. S. de Jujuy |66.33 |14.86 |38.37 |552.40 |680.59 |
+|[101](http://www.latinamerica.bike/track/d101en) |S.S. de Jujuy | Purmamarca |66.22 |11.63 |43.77 |1218.67 |165.35 |
+|[102](http://www.latinamerica.bike/track/d102en) |Cuesta de Lipan | Cuesta de Lipan |52.08 |11.86 |69.40 |1814.97 |1774.64 |
+|[103](http://www.latinamerica.bike/track/d103en) |Purmamarca | Tilcara |26.07 |13.08 |34.16 |331.56 |203.59 |
+|[104](http://www.latinamerica.bike/track/d104en) |Tilcara | Humahuaca |44.85 |10.27 |27.07 |562.03 |97.61 |
+|[105](http://www.latinamerica.bike/track/d105en) |Humahuaca | Tres Cruces |45.57 |9.36 |26.25 |807.42 |163.36 |
+|[106](http://www.latinamerica.bike/track/d106en) |Tres Cruces | Puesto del Marques |61.98 |12.32 |25.21 |255.40 |346.19 |
+|[107](http://www.latinamerica.bike/track/d107en) |Puesto del Marques | Villazon |54.64 |13.09 |25.26 |166.72 |209.96 |
+|[108](http://www.latinamerica.bike/track/d108en) |Uyuni | Dakar Monument |36.37 |9.28 |14.70 |182.20 |196.33 |
+|[109](http://www.latinamerica.bike/track/d109en) |Dakar Monument | Isla Incahuasi |63.22 |13.29 |32.55 |379.51 |374.89 |
+|[110](http://www.latinamerica.bike/track/d110en) |Isla Incahuasi | Bella Vista |43.84 |12.59 |19.44 |59.11 |41.56 |
+|[111](http://www.latinamerica.bike/track/d111en) |Uyuni | Road |74.42 |13.44 |24.54 |397.69 |161.69 |
+|[112](http://www.latinamerica.bike/track/d112en) |Road | RN 21 |41.92 |9.41 |30.48 |525.93 |355.89 |
+|[113](http://www.latinamerica.bike/track/d113en) |RN21 | Tupiza |78.33 |9.29 |35.56 |908.87 |2031.17 |
+|[114](http://www.latinamerica.bike/track/d114en) |Tupiza | RN 21 km 278 |59.35 |12.30 |48.85 |918.84 |456.01 |
+|[115](http://www.latinamerica.bike/track/d115en) |RN 21 | Villazon |31.29 |13.95 |42.54 |205.92 |183.26 |
+|[116](http://www.latinamerica.bike/track/d116en) |S.S. de Jujuy | El Carmen |30.12 |15.56 |30.01 |126.56 |212.42 |
+|[117](http://www.latinamerica.bike/track/d117en) |El Carmen | Salta |62.79 |15.30 |37.10 |632.28 |639.26 |
